@@ -1,7 +1,5 @@
 .hero {
   height: 500px;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)),
-    url(/images/hero.jpeg);
   background-size: cover;
   // background-position: center;
   color: white;
@@ -17,4 +15,24 @@
     font-size: 20px;
     line-height: 25px;
   }
+}
+
+.index {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)),
+    url(/images/hero.jpeg);
+}
+
+.about {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)),
+    url(/images/about.jpeg);
+}
+
+.features {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)),
+    url(/images/features.jpeg);
+}
+
+.contact {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)),
+    url(/images/contact.jpeg);
 }
