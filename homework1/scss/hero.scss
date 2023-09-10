@@ -7,7 +7,7 @@
   align-items: center;
 }
 .text-wrap {
-  padding-left: 200px;
+  padding-left: 150px;
   h1 {
     font-size: 45px;
   }
@@ -19,20 +19,20 @@
 
 .index {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)),
-    url(/images/hero.jpeg);
+    url(../images/hero.jpeg);
 }
 
 .about {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)),
-    url(/images/about.jpeg);
+    url(../images/about.jpeg);
 }
 
 .features {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)),
-    url(/images/features.jpeg);
+    url(../images/features.jpeg);
 }
 
 .contact {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)),
-    url(/images/contact.jpeg);
+    url(../images/contact.jpeg);
 }
