@@ -1,0 +1,18 @@
+# log
+logs
+*.log
+
+# dependency directories
+node_modules/
+css/styles.css.map
+
+# npm cache directory
+.npm
+
+# vsc project folder
+.vscode
+
+# annoying mac files
+.DS_Store
+
+
