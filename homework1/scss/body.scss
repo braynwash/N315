@@ -1,3 +1,32 @@
 .body {
-  height: 600px;
+  height: 700px;
+  display: flex;
+  align-items: center;
+  p {
+    margin-bottom: 50px;
+  }
+  .card-wrap {
+    // background-color: aqua;
+    width: 85%;
+    display: flex;
+    .card {
+      width: 500px;
+      padding-right: 100px;
+      h2 {
+        font-size: 22px;
+      }
+      .button {
+        padding: 15px;
+        width: 125px;
+        background-color: black;
+        color: white;
+        &:hover {
+          background-color: white;
+          border: 1px solid black;
+          color: black;
+          cursor: pointer;
+        }
+      }
+    }
+  }
 }
