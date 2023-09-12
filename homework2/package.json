@@ -1,0 +1,16 @@
+{
+  "name": "homework2",
+  "version": "1.0.0",
+  "description": "This is the second homework assignment for N315.",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "live-server"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
