@@ -30,22 +30,29 @@ nav a:hover {
 .hero {
     height: 500px;
     width: 100%;
-    background-image: url(../images/home.jpeg);
     background-position: center;
     background-size: cover;
-    background-color: red;
     display: flex;
     align-items: center;
     justify-content: center;
-    
 }
 
-.hero .text {
+.blogHero {
+    height: 300px;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text {
     text-align: center;
     color: white;
 }
 
-.articles {
+.wrapper {
     width: 90%;
     margin: 0 auto;
 }
@@ -61,6 +68,7 @@ nav a:hover {
 .cards-wrap {
     display: flex;
     width: 100%;
+    margin-bottom: 50px;
 }
 
 .cards-wrap .article-card {
@@ -68,7 +76,6 @@ nav a:hover {
     height: 400px;
     margin-right: 50px;
     /* background-color: red; */
-    margin-bottom: 100px;
 }
 
 .article-card img {
@@ -81,11 +88,49 @@ nav a:hover {
     cursor: pointer;
 }
 
+.learn-wrap {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.learn-more {
+    margin-right: 50px;
+}
+
+.learn-more .learnImg {
+    height: 350px;
+    width: 650px;
+    background-image: url(../images/us.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+
+.learn-more .learnImg:hover {
+    cursor: pointer;
+}
+
 footer {
+    margin-top: 100px;
     height: 150px;
     border-top: 5px solid black;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 20px;
+}
+
+.home {
+    background-image: url(../images/home.jpeg);
+}
+
+.about {
+    background-image: url(../images/about.jpeg);
+}
+
+.blog {
+    background-image: url(../images/blog.jpeg);
+}
+
+.contact {
+    background-image: url(../images/contactUs.jpeg);
 }
