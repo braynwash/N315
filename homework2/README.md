@@ -4,7 +4,7 @@ This is the second homework assignment for N315.
 
 # Purpose
 
-This homework assignment will teach the MVC model as well as how we utilize and implement it.
+This homework assignment will teach the MVC model as well as how to utilize and implement it in projects.
 
 # Tasks
 
