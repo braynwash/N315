@@ -1,0 +1,47 @@
+.contactPage {
+  //   background-color: red;
+  margin: 0 auto;
+  width: 95%;
+  height: 500px;
+  .contactWrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    .contactImg {
+      background-image: url(../images/form.jpeg);
+      height: 400px;
+      width: 450px;
+      margin-right: 75px;
+      background-position: center;
+      background-size: cover;
+    }
+    form {
+      input {
+        width: 200px;
+        height: 25px;
+        margin-top: 10px;
+      }
+      textarea {
+        margin-top: 10px;
+        margin-bottom: 20px;
+        padding: 10px;
+      }
+      submit {
+        background-color: #ff7518;
+        padding: 10px 15px;
+        &:hover {
+          cursor: pointer;
+          background-color: white;
+          color: #ff7518;
+          outline: #ff7518 solid 2px;
+        }
+      }
+    }
+  }
+}
+
+.contact {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)),
+    url(../images/contact.jpg);
+}

@@ -1,0 +1,34 @@
+.offer {
+  height: 30px;
+  background-color: #ff7518;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+nav {
+  width: 95%;
+  height: 80px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .logo {
+    font-size: 25px;
+  }
+  .links {
+    min-width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    a {
+      text-decoration: none;
+      font-size: 15px;
+      color: #ff7518;
+      &:hover {
+        color: black;
+      }
+    }
+  }
+}

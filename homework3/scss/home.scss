@@ -1,0 +1,76 @@
+.hero {
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-position: center;
+  background-size: cover;
+  .text {
+    color: white;
+    text-align: center;
+    h1 {
+      font-size: 55px;
+      margin-bottom: 30px;
+    }
+    span {
+      background-color: #ff7518;
+      padding: 10px 15px;
+      &:hover {
+        cursor: pointer;
+        background-color: white;
+        color: #ff7518;
+      }
+    }
+  }
+}
+
+.homePage {
+  h1 {
+    text-align: center;
+    margin-top: 50px;
+  }
+  .cards-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .card {
+      background-position: center;
+      background-size: cover;
+      height: 400px;
+      width: 350px;
+      margin-left: 25px;
+      display: flex;
+      span {
+        background-color: #ff7518;
+        color: white;
+        height: 100px;
+        &:hover {
+          cursor: pointer;
+          background-color: white;
+          color: #ff7518;
+        }
+      }
+    }
+  }
+}
+
+.home {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)),
+    url(../images/home.jpeg);
+}
+
+.costumes {
+  background-image: url(../images/costumes.jpeg);
+}
+
+.decor {
+  background-image: url(../images/decor.jpeg);
+}
+
+.tricks {
+  background-image: url(../images/tricks.jpeg);
+}
+
+.treats {
+  background-image: url(../images/treats.jpeg);
+}
