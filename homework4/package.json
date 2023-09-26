@@ -1,0 +1,19 @@
+{
+  "name": "homework4",
+  "version": "1.0.0",
+  "description": "This is the fourth homework assignment for N315.",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "live": "live-server",
+    "compile": "sass scss/styles.scss css/styles.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.68.0"
+  }
+}
