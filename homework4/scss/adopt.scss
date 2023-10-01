@@ -1,0 +1,83 @@
+.adopt {
+  height: 950px;
+  background-color: #aee0f1;
+  text-align: center;
+  h1 {
+    color: #3f1261;
+    font-size: 40px;
+    padding-top: 50px;
+    margin-bottom: 50px;
+  }
+  .search {
+    margin: 0 auto;
+    width: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    span {
+      padding: 15px 20px;
+      color: white;
+      background-color: #3f1261;
+      border-radius: 50px;
+      font-weight: bold;
+      &:hover {
+        background-color: white;
+        border: 3px solid #3f1261;
+        color: #3f1261;
+        cursor: pointer;
+      }
+    }
+  }
+  .adoptWrap {
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 50px;
+    .adoptCard {
+      background-color: white;
+      border-radius: 25px;
+      width: 350px;
+      height: 250px;
+      .difficulty {
+        background-color: white;
+        height: 30px;
+        width: 30px;
+        border-radius: 50px;
+      }
+      .adoptImg {
+        height: 150px;
+        background-position: center;
+        background-size: cover;
+      }
+      h2 {
+        font-size: 35px;
+        color: #3f1261;
+        margin-top: 15px;
+      }
+    }
+  }
+}
+
+.adoptHero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2)),
+    url(../images/adopt.jpeg);
+}
+
+.dog1 {
+  background-image: url(../images/1.jpeg);
+}
+
+.dog2 {
+  background-image: url(../images/2.jpeg);
+}
+
+.dog3 {
+  background-image: url(../images/3.jpeg);
+}
+
+.dog4 {
+  background-image: url(../images/4.jpeg);
+}
