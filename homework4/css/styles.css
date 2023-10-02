@@ -280,7 +280,6 @@ nav span:hover {
 
 footer {
   height: 400px;
-  background-color: #f4d3be;
   text-align: center;
 }
 footer .footWrap {
@@ -292,6 +291,111 @@ footer .footWrap {
   align-items: center;
   justify-content: space-evenly;
   margin-bottom: 35px;
+}
+
+#modal {
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+}
+#modal .modalFlex {
+  background-color: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+#modal .modalFlex #modal-clickHolder {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0);
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+#modal .modalFlex .modal-contentHolder {
+  position: relative;
+  min-height: 500px;
+  min-width: 400px;
+  max-width: 400px;
+  background-color: white;
+  border-radius: 20px;
+  text-align: center;
+  z-index: 99;
+  padding: 10px;
+}
+#modal .modalFlex .modal-contentHolder .close-button {
+  position: absolute;
+  right: 0;
+  font-size: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 9px 15px;
+  border-radius: 50px;
+  margin-right: 10px;
+  background-color: #f68631;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#modal .modalFlex .modal-contentHolder .close-button:hover {
+  color: #f68631;
+  background-color: white;
+  border: 2px solid #f68631;
+}
+#modal .modalFlex .modal-contentHolder h1 {
+  margin-top: 75px;
+  font-size: 40px;
+}
+#modal .modalFlex .modal-contentHolder input {
+  border: #f68631 solid 3px;
+  height: 55px;
+  width: 300px;
+  font-size: 20px;
+  padding-left: 5px;
+  margin-bottom: 30px;
+}
+#modal .modalFlex .modal-contentHolder span {
+  padding: 15px 25px;
+  background-color: #f68631;
+}
+#modal .modalFlex .modal-contentHolder span:hover {
+  background-color: white;
+  color: #f68631;
+  border: 2px solid #f68631;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+#alert {
+  position: fixed;
+  background-color: #e4531f;
+  color: white;
+  height: 55px;
+  width: 100%;
+  font-size: 20px;
+  z-index: 99;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+#alert .alertDiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+.hidden {
+  display: none;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,80 @@
+#modal {
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+  .modalFlex {
+    background-color: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    #modal-clickHolder {
+      position: absolute;
+      background-color: (rgba(0, 0, 0, 0));
+      width: 100%;
+      height: 100%;
+      top: 0;
+    }
+    .modal-contentHolder {
+      position: relative;
+      min-height: 500px;
+      min-width: 400px;
+      max-width: 400px;
+      background-color: white;
+      border-radius: 20px;
+      text-align: center;
+      z-index: 99;
+      padding: 10px;
+      .close-button {
+        position: absolute;
+        right: 0;
+        font-size: 25px;
+        font-weight: bold;
+        cursor: pointer;
+        padding: 9px 15px;
+        border-radius: 50px;
+        margin-right: 10px;
+        background-color: #f68631;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &:hover {
+          color: #f68631;
+          background-color: white;
+          border: 2px solid #f68631;
+        }
+      }
+      h1 {
+        margin-top: 75px;
+        font-size: 40px;
+      }
+      input {
+        border: #f68631 solid 3px;
+        height: 55px;
+        width: 300px;
+        font-size: 20px;
+        padding-left: 5px;
+        margin-bottom: 30px;
+      }
+      span {
+        padding: 15px 25px;
+        background-color: #f68631;
+        &:hover {
+          background-color: white;
+          color: #f68631;
+          border: 2px solid #f68631;
+          font-weight: bold;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+.hidden {
+  display: none;
+}

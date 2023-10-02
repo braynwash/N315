@@ -1,0 +1,23 @@
+#alert {
+  position: fixed;
+  background-color: #e4531f;
+  color: white;
+  height: 55px;
+  width: 100%;
+  font-size: 20px;
+  z-index: 99;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  .alertDiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+  }
+}
+
+.hidden {
+  display: none;
+}

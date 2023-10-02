@@ -6,9 +6,23 @@ function route() {
     console.log(pageID);
     changePage(hashTag, pageID)
 }
-
+ 
 function initListeners() {
-    console.log("Hello");
+    $("#logIn").on("click", (e) => {
+        $("#modal").toggle();
+    })
+    $(".close").on("click", (e) => {
+        $("#modal").hide();
+    })
+    $(".logIn").on("click", (e) => {
+        $("#modal").hide();
+    })
+    $(".logIn").on("click", (e) => {
+        $("#alert").toggle();
+    })
+      $(".logclose").on("click", (e) => {
+        $("#alert").toggle();
+    })
 }
 
 function initUrlListeners() {
