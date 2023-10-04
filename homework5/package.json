@@ -1,12 +1,13 @@
 {
   "name": "homework5",
   "version": "1.0.0",
-  "description": "",
+  "description": "This is the fifth homework assignment for N315.",
   "main": "index.js",
   "directories": {
     "lib": "lib"
   },
   "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
     "compile": "sass scss/styles.scss css/styles.css -w"
   },
   "keywords": [],

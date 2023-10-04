@@ -27,7 +27,7 @@ This project was made by Jonathan Baker and Jeremy Black. The work was split as 
 
 **Jonathan**
 
-- Nav bar
+- Nav bar + Footer
 - Log-in page
 - Feburary favorites page + responsiveness
 - Bookclubs page + responsiveness
