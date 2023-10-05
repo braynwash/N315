@@ -4,11 +4,18 @@
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   height: 100%;
 }
 
-h1, h2, h3, h4, h5, h6, p {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
   margin-bottom: 16px;
 }
 
@@ -62,6 +69,85 @@ nav .links {
   justify-content: center;
   justify-content: space-evenly;
   width: 50%;
+}
+
+footer {
+  height: 92px;
+  background-color: #587c83;
+  color: white;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+}
+footer .footWrap {
+  margin: 0 auto;
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .footWrap .footerNav {
+  width: 300px;
+  display: flex;
+  justify-content: space-around;
+}
+footer .footWrap .footerNav a {
+  text-decoration: none;
+  color: white;
+}
+footer .footWrap .socials {
+  width: 200px;
+  display: flex;
+  justify-content: space-around;
+}
+footer .footWrap .socials .socIcon {
+  height: 35px;
+  width: 35px;
+  background-size: cover;
+  background-position: center;
+}
+footer .footWrap .socials .socIcon:hover {
+  cursor: pointer;
+}
+
+.facebook {
+  background-image: url(../images/facebook_w.png);
+}
+
+.instagram {
+  background-image: url(../images/instagram_w.png);
+}
+
+.twitter {
+  background-image: url(../images/twitter_w.png);
+}
+
+@media (max-width: 768px) {
+  footer {
+    font-size: 11px;
+  }
+  footer .footWrap .socials {
+    width: 125px;
+  }
+  footer .footWrap .socials .socIcon {
+    height: 25px;
+    width: 25px;
+  }
+}
+@media (max-width: 390px) {
+  footer {
+    font-size: 6px;
+  }
+  footer .footWrap .footerNav {
+    width: 150px;
+  }
+  footer .footWrap .socials {
+    width: 100px;
+  }
+  footer .footWrap .socials .socIcon {
+    height: 15px;
+    width: 15px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
