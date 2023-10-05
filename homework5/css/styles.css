@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Segoe UI Regular";
+  font-size: 16px;
 }
 
 html,
@@ -18,6 +19,12 @@ h5,
 h6,
 p {
   margin-bottom: 16px;
+}
+
+.site-wrapper {
+  margin: 0 auto;
+  width: 95%;
+  min-height: 100%;
 }
 
 @font-face {
@@ -78,6 +85,80 @@ nav .links {
   justify-content: center;
   justify-content: space-evenly;
   width: 50%;
+}
+
+.hero {
+  max-width: 1500px;
+  height: 530px;
+  margin: 0 auto;
+  background-image: linear-gradient(rgba(88, 124, 131, 0.6), rgba(88, 124, 131, 0.6)), url(../images/home-hero.jpg);
+  background-position: center;
+  background-size: cover;
+  margin-top: 158px;
+  margin-bottom: 176px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.hero .heroText {
+  color: white;
+  margin-right: 200px;
+  text-transform: uppercase;
+}
+.hero .heroText h1 {
+  font-size: 32px;
+}
+
+.homeWrap {
+  min-height: 600px;
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 188px;
+}
+.homeWrap .homeCard {
+  height: 100%;
+  max-width: 390px;
+  text-align: center;
+}
+.homeWrap .homeCard .homeImg {
+  margin: 0 auto;
+  height: 491px;
+  width: 306px;
+  margin-bottom: 50px;
+  background-position: center;
+  background-size: cover;
+}
+.homeWrap .homeCard p {
+  margin-bottom: 40px;
+}
+.homeWrap .homeCard .outlineButton {
+  height: 68px;
+  width: 222px;
+  border: black solid 1px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.homeWrap .homeCard .outlineButton:hover {
+  cursor: pointer;
+}
+.homeWrap a {
+  color: black;
+  text-decoration: none;
+}
+
+.mockingbird {
+  background-image: url(../images/to-kill-a-mockingbird.jpg);
+}
+
+.becoming {
+  background-image: url(../images/becoming.jpg);
+}
+
+.firestarter {
+  background-image: url(../images/firestarter.jpg);
 }
 
 footer {
