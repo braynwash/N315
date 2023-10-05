@@ -269,6 +269,65 @@ footer .footWrap .socials .socIcon:hover {
   color: white;
 }
 
+.favorites-hero {
+  height: 463;
+  width: 1464;
+  background-image: linear-gradient(90deg, rgb(88, 124, 131) 0%, rgba(88, 124, 131, 0.3547794118) 100%), url(../images/february-favorites-hero.jpg);
+  background-position: center;
+  background-size: cover;
+  margin-top: 140px;
+  margin-bottom: 140px;
+}
+.favorites-hero .hero-text {
+  height: 463px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  color: white;
+}
+.favorites-hero .hero-text h1 {
+  font-size: 32px;
+  font-family: "Segoe UI Regular";
+}
+.favorites-hero .hero-text h2 {
+  font-size: 26px;
+}
+.favorites-hero .hero-text p {
+  font-size: 16px;
+}
+
+.book-card {
+  width: 1464;
+  height: 380px;
+  display: flex;
+  margin-bottom: 140px;
+}
+.book-card .book-img {
+  width: 250px;
+  height: 380px;
+  background-color: beige;
+  background-image: url(../images/becoming.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.book-card .book-text {
+  width: 80%;
+  margin-left: 35px;
+}
+.book-card .book-text h1 {
+  font-size: 26px;
+  margin-bottom: 50px;
+  font-family: Segoe UI bold;
+}
+.book-card .book-text p {
+  font-size: 16px;
+}
+
+#findingMe .book-img {
+  background-image: url(../images/finding\ me.jpg);
+}
+
 .blog-card {
   width: 1464;
   height: 463px;
@@ -350,6 +409,92 @@ footer .footWrap .socials .socIcon:hover {
   background-image: url(../images/ereading-blog.jpg);
   background-position: center;
   background-size: cover;
+}
+
+.bookclub-hero {
+  height: 463;
+  width: 1464;
+  background-image: linear-gradient(90deg, rgb(88, 124, 131) 0%, rgba(88, 124, 131, 0.3547794118) 100%), url(../images/book-club-hero.jpg);
+  background-position: center;
+  background-size: cover;
+  margin-top: 140px;
+  margin-bottom: 105px;
+}
+.bookclub-hero .hero-text {
+  height: 463px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  color: white;
+}
+.bookclub-hero .hero-text h1 {
+  font-size: 32px;
+  font-family: "Segoe UI Regular";
+}
+.bookclub-hero .hero-text h2 {
+  font-size: 26px;
+}
+
+.bookclub-content {
+  width: 1464;
+  height: 515px;
+  display: flex;
+  margin-bottom: 140px;
+}
+.bookclub-content .bookclub-img {
+  width: 622px;
+  height: 463px;
+  background-image: url(../images/open-book-blog.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.bookclub-content .bookclub-text {
+  width: 70%;
+  margin-left: 40px;
+}
+
+.eread-hero {
+  height: 463;
+  width: 1464;
+  background-image: linear-gradient(90deg, rgb(88, 124, 131) 0%, rgba(88, 124, 131, 0.3547794118) 100%), url(../images/eread-hero.jpg);
+  background-position: center;
+  background-size: cover;
+  margin-top: 140px;
+  margin-bottom: 105px;
+}
+.eread-hero .hero-text {
+  height: 463px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  color: white;
+}
+.eread-hero .hero-text h1 {
+  font-size: 32px;
+  font-family: "Segoe UI Regular";
+}
+.eread-hero .hero-text h2 {
+  font-size: 26px;
+}
+
+.eread-content {
+  width: 1464;
+  height: 515px;
+  display: flex;
+  margin-bottom: 140px;
+}
+.eread-content .eread-img {
+  width: 622px;
+  height: 463px;
+  background-image: url(../images/ereading-blog.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.eread-content .eread-text {
+  width: 70%;
+  margin-left: 40px;
 }
 
 /*# sourceMappingURL=styles.css.map */
