@@ -1,0 +1,79 @@
+footer {
+  height: 92px;
+  background-color: #587c83;
+  color: white;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  .footWrap {
+    margin: 0 auto;
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .footerNav {
+      width: 300px;
+      display: flex;
+      justify-content: space-around;
+      a {
+        text-decoration: none;
+        color: white;
+      }
+    }
+    .socials {
+      width: 200px;
+      display: flex;
+      justify-content: space-around;
+      .socIcon {
+        height: 35px;
+        width: 35px;
+        background-size: cover;
+        background-position: center;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+.facebook {
+  background-image: url(../images/facebook_w.png);
+}
+
+.instagram {
+  background-image: url(../images/instagram_w.png);
+}
+
+.twitter {
+  background-image: url(../images/twitter_w.png);
+}
+
+@media (max-width: $tablet) {
+  footer {
+    font-size: 11px;
+  }
+  footer .footWrap .socials {
+    width: 125px;
+  }
+  footer .footWrap .socials .socIcon {
+    height: 25px;
+    width: 25px;
+  }
+}
+
+@media (max-width: $phone) {
+  footer {
+    font-size: 6px;
+  }
+  footer .footWrap .footerNav {
+    width: 150px;
+  }
+  footer .footWrap .socials {
+    width: 100px;
+  }
+  footer .footWrap .socials .socIcon {
+    height: 15px;
+    width: 15px;
+  }
+}

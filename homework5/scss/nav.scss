@@ -1,0 +1,56 @@
+nav {
+  height: 108px;
+  border-bottom: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+
+  a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+
+    img {
+      height: 50px;
+      width: 50px;
+      margin-left: 10px;
+    }
+  }
+
+  .logoWrapper {
+    display: flex;
+    align-items: center;
+    padding-left: 33px;
+    .logo {
+      height: 75px;
+      width: 75px;
+      background-image: url(../images/books-stack-of-three.png);
+      background-size: cover;
+      background-position: center;
+    }
+    .logoText {
+      font-size: 16px;
+      padding-left: 23px;
+    }
+  }
+
+  input {
+    background: url("../images/icons8-search-25.png") left no-repeat;
+    height: 44px;
+    width: 604px;
+    padding-left: 25px;
+    font-size: 16px;
+    background-color: #587c835e;
+  }
+
+  .links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+    width: 50%;
+  }
+}
