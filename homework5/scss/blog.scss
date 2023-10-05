@@ -1,0 +1,90 @@
+.blog-card {
+    width: 1464;
+    height: 463px;
+    background-color: $teal;
+    margin-top: 117px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    .img-holder {
+        width: 614px;
+        height: 372px;
+        display: flex;
+        justify-content: space-between;
+        .blog-img {
+            width: 250px;
+            height: 100%;
+
+        }
+    }
+    .text-holder {
+        width: 40%;
+        text-align: center;
+        h1 {
+            color: white;
+            font-size: 32px;
+            font-family: $SB;
+        }
+        p {
+            padding-top: 50px;
+            padding-bottom: 50px;
+            font-size: 16px;
+            color: white;
+            font-family: $SB;
+        }
+        .readmore {
+            height: 68px;
+            width: 222px;
+            margin: 0 auto;
+            border: solid 1px white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+
+            a{
+                text-decoration: none;
+                color: white;
+                margin: 0 auto;
+                padding: 20px 100px;
+            }
+        }
+    }
+}
+
+
+#img1 {
+    background-image: url(../images/becoming.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#img2 {
+    background-image: url(../images/finding\ me.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#bookclubs {
+    .img-holder {
+        width: 622px;
+        height: 100%;
+        background-color: aqua;
+        background-image: url(../images/open-book-blog.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+}
+
+#ereading {
+    margin-bottom: 140px;
+    .img-holder {
+        width: 622px;
+        height: 100%;
+        background-color: aqua;
+        background-image: url(../images/ereading-blog.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+}

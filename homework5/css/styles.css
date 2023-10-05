@@ -11,16 +11,6 @@ body {
   height: 100%;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  margin-bottom: 16px;
-}
-
 .site-wrapper {
   margin: 0 auto;
   width: 95%;
@@ -238,6 +228,130 @@ footer .footWrap .socials .socIcon:hover {
     height: 15px;
     width: 15px;
   }
+}
+.account-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 600px;
+}
+.account-wrapper .login-here {
+  display: flex;
+  flex-direction: column;
+  width: 233px;
+  height: 300px;
+}
+.account-wrapper .login-here .spacing {
+  height: 50px;
+}
+.account-wrapper .login-here h1 {
+  font-size: 26px;
+  font-family: "Segoe UI Regular";
+  text-align: left;
+}
+.account-wrapper .login-here input {
+  border: none;
+  border-bottom: 1px solid black;
+  width: 233px;
+  margin-top: 50px;
+}
+.account-wrapper .login-here .login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.account-wrapper .login-here .login input {
+  width: 170px;
+  height: 45px;
+  background-color: #587C83;
+  border: none;
+  cursor: pointer;
+  color: white;
+}
+
+.blog-card {
+  width: 1464;
+  height: 463px;
+  background-color: #587C83;
+  margin-top: 117px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.blog-card .img-holder {
+  width: 614px;
+  height: 372px;
+  display: flex;
+  justify-content: space-between;
+}
+.blog-card .img-holder .blog-img {
+  width: 250px;
+  height: 100%;
+}
+.blog-card .text-holder {
+  width: 40%;
+  text-align: center;
+}
+.blog-card .text-holder h1 {
+  color: white;
+  font-size: 32px;
+  font-family: "Segoe UI Regular";
+}
+.blog-card .text-holder p {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  font-size: 16px;
+  color: white;
+  font-family: "Segoe UI Regular";
+}
+.blog-card .text-holder .readmore {
+  height: 68px;
+  width: 222px;
+  margin: 0 auto;
+  border: solid 1px white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.blog-card .text-holder .readmore a {
+  text-decoration: none;
+  color: white;
+  margin: 0 auto;
+  padding: 20px 100px;
+}
+
+#img1 {
+  background-image: url(../images/becoming.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+#img2 {
+  background-image: url(../images/finding\ me.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+#bookclubs .img-holder {
+  width: 622px;
+  height: 100%;
+  background-color: aqua;
+  background-image: url(../images/open-book-blog.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+#ereading {
+  margin-bottom: 140px;
+}
+#ereading .img-holder {
+  width: 622px;
+  height: 100%;
+  background-color: aqua;
+  background-image: url(../images/ereading-blog.jpg);
+  background-position: center;
+  background-size: cover;
 }
 
 /*# sourceMappingURL=styles.css.map */
