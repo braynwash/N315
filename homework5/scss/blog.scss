@@ -34,20 +34,18 @@
             font-family: $SB;
         }
         .readmore {
-            height: 68px;
-            width: 222px;
             margin: 0 auto;
-            border: solid 1px white;
             display: flex;
             align-items: center;
             justify-content: center;
-            cursor: pointer;
 
             a{
                 text-decoration: none;
                 color: white;
                 margin: 0 auto;
                 padding: 20px 100px;
+                border: solid 1px white;
+                font-size: 16px;
             }
         }
     }
