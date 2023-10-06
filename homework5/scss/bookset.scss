@@ -1,0 +1,127 @@
+.bookset {
+  //   background-color: red;
+  height: 375px;
+  max-width: 100%;
+  margin-top: 180px;
+  margin-bottom: 300px;
+  h1 {
+    font-family: "Segoe UI Bold";
+    font-size: 26px;
+    margin-bottom: 65px;
+  }
+  .bookWrap {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    .set {
+      height: 100%;
+      width: 100%;
+      //   background-color: blue;
+      display: flex;
+      align-items: center;
+      .setImg {
+        max-height: 100%;
+        max-width: 40%;
+        background-color: green;
+        background-position: center;
+        background-size: cover;
+        margin-right: 5%;
+      }
+      .setText {
+        max-height: 100%;
+        max-width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        p {
+          margin-bottom: 15%;
+        }
+        .outlineButton {
+          height: $outline-height;
+          max-width: $outline-width;
+          border: $black solid 1px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          a {
+            text-decoration: none;
+            color: $black;
+          }
+        }
+      }
+    }
+  }
+}
+
+// book images
+.twilight {
+  background-image: url(../images/twilight-box-set.jpg);
+  height: 250px;
+  width: 225px;
+}
+
+.hp {
+  background-image: url(../images/hp-box-set.jpg);
+  height: 250px;
+  width: 225px;
+}
+
+.got {
+  background-image: url(../images/got-box-set.jpg);
+  height: 200px;
+  width: 200px;
+}
+
+.findingMe {
+  background-image: url(../images/finding\ me.jpg);
+  height: 300px;
+  width: 200px;
+}
+
+.mlk {
+  background-image: url(../images/mlk-biography.jpg);
+  height: 300px;
+  width: 200px;
+}
+
+.eleanor {
+  background-image: url(../images/elenor-roosevelt-biography.jpg);
+  height: 300px;
+  width: 200px;
+}
+
+.misery {
+  background-image: url(../images/misery.jpg);
+  height: 300px;
+  width: 200px;
+}
+
+.stein {
+  background-image: url(../images/frankenstein.jpg);
+  height: 300px;
+  width: 200px;
+}
+
+.phantoms {
+  background-image: url(../images/phantoms.jpg);
+  height: 300px;
+  width: 200px;
+}
+
+.pooh {
+  background-image: url(../images/winnie\ the\ pooh.jpg);
+  height: 300px;
+  width: 200px;
+}
+
+.hat {
+  background-image: url(../images/cat\ and\ the\ hat.jpg);
+  height: 300px;
+  width: 200px;
+}
+
+.space {
+  background-image: url(../images/fun\ facts\ about\ space.jpg);
+  height: 230px;
+  width: 230px;
+}

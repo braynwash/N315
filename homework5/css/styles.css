@@ -131,9 +131,6 @@ nav .links {
   align-items: center;
   justify-content: center;
 }
-.homeWrap .homeCard .outlineButton:hover {
-  cursor: pointer;
-}
 .homeWrap a {
   color: black;
   text-decoration: none;
@@ -153,19 +150,19 @@ nav .links {
 
 .about {
   height: 587px;
+  margin: 0 auto;
   width: 90%;
-  margin-left: 125px;
   display: flex;
   margin-top: 213px;
 }
 .about .aboutImg {
   height: 587px;
-  width: 25%;
+  width: 35%;
   background-position: center;
   background-size: cover;
 }
 .about .aboutText {
-  width: 75%;
+  width: 100%;
   margin-left: 40px;
 }
 .about .aboutText h1 {
@@ -185,6 +182,131 @@ nav .links {
 
 .abt2 {
   background-image: url(../images/about-photo-two.jpg);
+}
+
+.bookset {
+  height: 375px;
+  max-width: 100%;
+  margin-top: 180px;
+  margin-bottom: 300px;
+}
+.bookset h1 {
+  font-family: "Segoe UI Bold";
+  font-size: 26px;
+  margin-bottom: 65px;
+}
+.bookset .bookWrap {
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+.bookset .bookWrap .set {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.bookset .bookWrap .set .setImg {
+  max-height: 100%;
+  max-width: 40%;
+  background-color: green;
+  background-position: center;
+  background-size: cover;
+  margin-right: 5%;
+}
+.bookset .bookWrap .set .setText {
+  max-height: 100%;
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.bookset .bookWrap .set .setText p {
+  margin-bottom: 15%;
+}
+.bookset .bookWrap .set .setText .outlineButton {
+  height: 68px;
+  max-width: 222px;
+  border: black solid 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bookset .bookWrap .set .setText .outlineButton a {
+  text-decoration: none;
+  color: black;
+}
+
+.twilight {
+  background-image: url(../images/twilight-box-set.jpg);
+  height: 250px;
+  width: 225px;
+}
+
+.hp {
+  background-image: url(../images/hp-box-set.jpg);
+  height: 250px;
+  width: 225px;
+}
+
+.got {
+  background-image: url(../images/got-box-set.jpg);
+  height: 200px;
+  width: 200px;
+}
+
+.findingMe {
+  background-image: url(../images/finding\ me.jpg);
+  height: 300px;
+  width: 200px;
+}
+
+.mlk {
+  background-image: url(../images/mlk-biography.jpg);
+  height: 300px;
+  width: 200px;
+}
+
+.eleanor {
+  background-image: url(../images/elenor-roosevelt-biography.jpg);
+  height: 300px;
+  width: 200px;
+}
+
+.misery {
+  background-image: url(../images/misery.jpg);
+  height: 300px;
+  width: 200px;
+}
+
+.stein {
+  background-image: url(../images/frankenstein.jpg);
+  height: 300px;
+  width: 200px;
+}
+
+.phantoms {
+  background-image: url(../images/phantoms.jpg);
+  height: 300px;
+  width: 200px;
+}
+
+.pooh {
+  background-image: url(../images/winnie\ the\ pooh.jpg);
+  height: 300px;
+  width: 200px;
+}
+
+.hat {
+  background-image: url(../images/cat\ and\ the\ hat.jpg);
+  height: 300px;
+  width: 200px;
+}
+
+.space {
+  background-image: url(../images/fun\ facts\ about\ space.jpg);
+  height: 230px;
+  width: 230px;
 }
 
 .account-wrapper {
