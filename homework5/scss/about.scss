@@ -1,0 +1,35 @@
+.about {
+  height: 587px;
+  width: 90%;
+  margin-left: 125px;
+  display: flex;
+  margin-top: 213px;
+  .aboutImg {
+    height: 587px;
+    width: 25%;
+    background-position: center;
+    background-size: cover;
+  }
+  .aboutText {
+    width: 75%;
+    margin-left: 40px;
+    h1 {
+      margin-bottom: 40px;
+    }
+    p {
+      margin-bottom: 61px;
+    }
+  }
+}
+
+.blank {
+  height: 291px;
+}
+
+.abt1 {
+  background-image: url(../images/about-photo.jpg);
+}
+
+.abt2 {
+  background-image: url(../images/about-photo-two.jpg);
+}

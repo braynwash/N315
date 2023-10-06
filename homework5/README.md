@@ -33,14 +33,14 @@ This project was made by Jonathan Baker and Jeremy Black. The work was split as 
 - Bookclubs page + responsiveness
 - Ereading page + responsiveness
 - Cart page + responsiveness
+- Blog page + responsiveness
 
 **Jeremy**
 
 - URL Navigation logic
-- Logged in/Logged out logic
+- Logged in/Logged out states logic
 - Home page + responsiveness
 - About page + responsiveness
 - Booksets page + responsiveness
-- Blog page + responsiveness
 
 # Web4 Link(s)
