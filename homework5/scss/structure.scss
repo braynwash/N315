@@ -25,3 +25,15 @@ body {
   font-family: "Segoe UI Bold";
   src: url(../css/fonts/segoeuib.ttf);
 }
+
+@media (max-width: $tablet) {
+  * {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: $phone) {
+  * {
+    font-size: 6px;
+  }
+}

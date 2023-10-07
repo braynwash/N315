@@ -8,6 +8,7 @@ function route() {
 
 function initListeners() {
     console.log("Test");
+    
 }
 
 function initUrlListeners() {
@@ -18,6 +19,8 @@ function initUrlListeners() {
 $(document).ready(function () {
     initListeners();
     initUrlListeners();
-    
+    if ($(window).width() <= 768) {
+        $('#hero').removeClass('heroImg');
+    }
 })
 

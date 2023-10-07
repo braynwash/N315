@@ -32,7 +32,7 @@ This project was made by Jonathan Baker and Jeremy Black. The work was split as 
 - Feburary favorites page + responsiveness
 - Bookclubs page + responsiveness
 - Ereading page + responsiveness
-- Cart page + responsiveness
+
 - Blog page + responsiveness
 
 **Jeremy**
@@ -42,5 +42,6 @@ This project was made by Jonathan Baker and Jeremy Black. The work was split as 
 - Home page + responsiveness
 - About page + responsiveness
 - Booksets page + responsiveness
+- Cart page + responsiveness
 
 # Web4 Link(s)

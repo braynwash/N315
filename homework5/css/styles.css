@@ -1,3 +1,7 @@
+.bold {
+  font-family: "Segoe UI Bold";
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -24,6 +28,16 @@ body {
 @font-face {
   font-family: "Segoe UI Bold";
   src: url(../css/fonts/segoeuib.ttf);
+}
+@media (max-width: 768px) {
+  * {
+    font-size: 11px;
+  }
+}
+@media (max-width: 390px) {
+  * {
+    font-size: 6px;
+  }
 }
 nav {
   height: 108px;
@@ -81,7 +95,7 @@ nav .links {
   max-width: 1500px;
   height: 530px;
   margin: 0 auto;
-  background-image: linear-gradient(rgba(88, 124, 131, 0.6), rgba(88, 124, 131, 0.6)), url(../images/home-hero.jpg);
+  background-color: #587c83;
   background-position: center;
   background-size: cover;
   margin-top: 158px;
@@ -114,13 +128,16 @@ nav .links {
 .homeWrap .homeCard .homeImg {
   margin: 0 auto;
   height: 491px;
-  width: 306px;
+  max-width: 306px;
   margin-bottom: 50px;
   background-position: center;
   background-size: cover;
 }
 .homeWrap .homeCard p {
   margin-bottom: 40px;
+}
+.homeWrap .homeCard .bold {
+  font-size: 32px;
 }
 .homeWrap .homeCard .outlineButton {
   height: 68px;
@@ -148,6 +165,91 @@ nav .links {
   background-image: url(../images/firestarter.jpg);
 }
 
+.heroImg {
+  background-image: linear-gradient(rgba(88, 124, 131, 0.6), rgba(88, 124, 131, 0.6)), url(../images/home-hero.jpg);
+}
+
+@media (max-width: 768px) {
+  .hero {
+    max-width: 552px;
+    height: 329px;
+    margin-bottom: 61px;
+    margin-top: 88px;
+  }
+  .hero .heroText {
+    margin-right: 80px;
+  }
+  .hero .heroText h1 {
+    font-size: 12px;
+  }
+  .hero .heroText p {
+    font-size: 7px;
+  }
+  .homeWrap {
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 0px;
+  }
+  .homeWrap .homeCard {
+    margin: 0 auto;
+    margin-bottom: 71px;
+  }
+  .homeWrap .homeCard .homeImg {
+    width: 175px;
+    height: 281px;
+  }
+  .homeWrap .homeCard .bold {
+    font-size: 11px;
+  }
+  .homeWrap .homeCard .outlineButton {
+    font-size: 12px;
+    width: 183px;
+    height: 50px;
+  }
+}
+@media (max-width: 390px) {
+  .hero {
+    max-width: 316px;
+    height: 193px;
+    margin-bottom: 61px;
+    margin-top: 55px;
+  }
+  .hero .heroText {
+    margin-right: 70px;
+  }
+  .hero .heroText h1 {
+    font-size: 6px;
+    margin-bottom: 22px;
+  }
+  .hero .heroText p {
+    font-size: 6px;
+  }
+  .homeWrap {
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 0px;
+  }
+  .homeWrap .homeCard {
+    margin: 0 auto;
+    margin-bottom: 88px;
+  }
+  .homeWrap .homeCard .homeImg {
+    width: 70px;
+    height: 112px;
+  }
+  .homeWrap .homeCard .homeText {
+    margin: 0 auto;
+    width: 50%;
+  }
+  .homeWrap .homeCard .bold {
+    font-size: 6px;
+  }
+  .homeWrap .homeCard .outlineButton {
+    font-size: 12px;
+    width: 114px;
+    height: 30px;
+  }
+}
 .about {
   height: 587px;
   margin: 0 auto;
@@ -362,7 +464,7 @@ nav .links {
 .cart .cartWrap .cartImg {
   background-position: center;
   background-size: cover;
-  margin-left: 135px;
+  margin-left: 5%;
 }
 .cart .cartWrap .cartText {
   margin-left: 22px;
