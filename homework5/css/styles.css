@@ -265,10 +265,16 @@ nav .links {
 }
 .about .aboutText {
   width: 100%;
-  margin-left: 40px;
+  margin-left: 3%;
 }
 .about .aboutText h1 {
   margin-bottom: 40px;
+  text-align: center;
+  font-size: 32px;
+}
+.about .aboutText .found {
+  text-align: center;
+  font-size: 26px;
 }
 .about .aboutText p {
   margin-bottom: 61px;
@@ -286,6 +292,59 @@ nav .links {
   background-image: url(../images/about-photo-two.jpg);
 }
 
+@media (max-width: 768px) {
+  .about {
+    margin-top: 76px;
+    max-height: 400px;
+    margin-bottom: 0px;
+  }
+  .about .aboutImg {
+    height: 343px;
+    min-width: 208px;
+  }
+  .about .aboutText {
+    text-align: center;
+    width: 100%;
+    margin-left: 12%;
+  }
+  .about .aboutText h1 {
+    font-size: 12px;
+    margin-bottom: 25px;
+  }
+  .about .aboutText .found {
+    font-size: 8px;
+  }
+  .about .aboutText p {
+    margin-bottom: 35px;
+  }
+  .blank {
+    height: 109px;
+  }
+}
+@media (max-width: 390px) {
+  .about {
+    margin-top: 159px;
+    margin-bottom: 190px;
+    height: 150px;
+  }
+  .about .aboutImg {
+    min-width: 73px;
+    height: 132px;
+  }
+  .about .aboutText h1 {
+    margin-bottom: 16px;
+    font-size: 6px;
+  }
+  .about .aboutText .found {
+    font-size: 6px;
+  }
+  .about .aboutText p {
+    margin-bottom: 16px;
+  }
+  .blank {
+    height: 60px;
+  }
+}
 .bookset {
   height: 375px;
   max-width: 100%;
