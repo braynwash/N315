@@ -1,0 +1,32 @@
+.cart {
+  height: 550px;
+  width: 100%;
+  border-bottom: 1px solid black;
+  .cartWrap {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    .cartImg {
+      background-position: center;
+      background-size: cover;
+      margin-left: 135px;
+    }
+    .cartText {
+      margin-left: 22px;
+
+      .editCart {
+        margin-top: 43px;
+        span {
+          text-decoration: underline;
+          &:hover {
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
+
+.blnk {
+  height: 776px;
+}

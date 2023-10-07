@@ -349,6 +349,38 @@ nav .links {
   color: white;
 }
 
+.cart {
+  height: 550px;
+  width: 100%;
+  border-bottom: 1px solid black;
+}
+.cart .cartWrap {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.cart .cartWrap .cartImg {
+  background-position: center;
+  background-size: cover;
+  margin-left: 135px;
+}
+.cart .cartWrap .cartText {
+  margin-left: 22px;
+}
+.cart .cartWrap .cartText .editCart {
+  margin-top: 43px;
+}
+.cart .cartWrap .cartText .editCart span {
+  text-decoration: underline;
+}
+.cart .cartWrap .cartText .editCart span:hover {
+  cursor: pointer;
+}
+
+.blnk {
+  height: 776px;
+}
+
 .favorites-hero {
   height: 463;
   width: 1464;
