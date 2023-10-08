@@ -11,7 +11,7 @@
   }
   .bookWrap {
     height: 100%;
-    width: 100%;
+    max-width: 100%;
     display: flex;
     .set {
       height: 100%;
@@ -124,4 +124,76 @@
   background-image: url(../images/fun\ facts\ about\ space.jpg);
   height: 230px;
   width: 230px;
+}
+
+@media (max-width: $tablet) {
+  .bookset {
+    margin-bottom: 350px;
+    h1 {
+      font-size: 12px;
+    }
+  }
+  .bookset .bookWrap {
+    min-height: 450px;
+    flex-direction: column;
+  }
+  .bookset .bookWrap .set {
+    max-width: 60%;
+    margin: 0 auto;
+    margin-bottom: 10%;
+  }
+  .bookset .bookWrap .set .setImg {
+    max-width: 117px;
+    max-height: 150px;
+    margin-right: 8%;
+  }
+  .bookset .bookWrap .set .setText {
+    .bold {
+      font-size: 12px;
+    }
+    p {
+      margin-bottom: 15px;
+    }
+  }
+  .bookset .bookWrap .set .setText .outlineButton {
+    height: 37px;
+    width: 126px;
+  }
+}
+
+@media (max-width: $phone) {
+  .bookset {
+    margin-bottom: 150px;
+    margin-top: 50px;
+    h1 {
+      font-size: 6px;
+      margin-bottom: 21px;
+    }
+  }
+  .bookset .bookWrap {
+    min-height: 450px;
+    flex-direction: column;
+  }
+  .bookset .bookWrap .set {
+    max-width: 60%;
+    margin: 0 auto;
+    margin-bottom: 25%;
+  }
+  .bookset .bookWrap .set .setImg {
+    max-width: 68px;
+    max-height: 80px;
+    margin-right: 8%;
+  }
+  .bookset .bookWrap .set .setText {
+    .bold {
+      font-size: 6px;
+    }
+    p {
+      margin-bottom: 11px;
+    }
+  }
+  .bookset .bookWrap .set .setText .outlineButton {
+    height: 23px;
+    width: 72px;
+  }
 }

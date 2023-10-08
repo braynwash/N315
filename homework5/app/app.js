@@ -8,7 +8,6 @@ function route() {
 
 function initListeners() {
     console.log("Test");
-    
 }
 
 function initUrlListeners() {
