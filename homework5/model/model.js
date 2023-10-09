@@ -8,4 +8,5 @@ export function changePage(hashTag, pageID) {
             $("#app").html(data);
     })
 }
-};
+}
+

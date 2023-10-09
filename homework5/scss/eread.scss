@@ -48,3 +48,47 @@
     margin-left: 40px;
   }
 }
+@media (max-width: $tablet) {
+  .eread-hero {
+      width: 562px;
+      height: 197px;
+      margin: 0 auto;
+      margin-top: 77px;
+      margin-bottom: 45px;
+
+      .hero-text {
+          height: 100%;
+          text-align: center;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+          color: white;
+  
+          h1 {
+              font-size: 12px;
+              font-family: $SB;
+          }
+          h2 {
+              font-size: 11px;
+          }
+          p {
+              font-size: 8px;
+          }
+      }
+
+  }
+  .eread-content {
+      height: 100%;
+      width: 562px;
+      display: flex;
+      margin: 0 auto;
+      margin-bottom: 50px;
+          .eread-img {
+              width: 260px;
+              height: 205px;
+          }
+      
+      
+      
+  }
+}
