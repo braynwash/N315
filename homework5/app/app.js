@@ -3,9 +3,9 @@ import { changePage } from "../model/model.js";
 function route() {
     let hashTag = window.location.hash;
     let pageID = hashTag.replace("#", "");
-    changePage(hashTag, pageID)
+    changePage(hashTag, pageID);
 }
-
+ 
 function initListeners() {
     console.log("Test");
 }
