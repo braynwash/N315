@@ -712,7 +712,7 @@ nav .links {
   padding-bottom: 50px;
   font-size: 16px;
   color: white;
-  font-family: "Segoe UI Bold";
+  font-family: "Segoe UI Regular";
 }
 .blog-card .text-holder .readmore {
   margin: 0 auto;
@@ -724,7 +724,7 @@ nav .links {
   text-decoration: none;
   color: white;
   margin: 0 auto;
-  padding: 20px 100px;
+  padding: 34px 111px;
   border: solid 1px white;
   font-size: 16px;
 }
@@ -742,7 +742,7 @@ nav .links {
 }
 
 #bookclubs .img-holder {
-  width: 622px;
+  max-width: 622px;
   height: 100%;
   background-color: aqua;
   background-image: url(../images/open-book-blog.jpg);
@@ -754,7 +754,7 @@ nav .links {
   margin-bottom: 140px;
 }
 #ereading .img-holder {
-  width: 622px;
+  max-width: 622px;
   height: 100%;
   background-color: aqua;
   background-image: url(../images/ereading-blog.jpg);
