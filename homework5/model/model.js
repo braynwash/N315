@@ -10,3 +10,13 @@ export function changePage(hashTag, pageID) {
 }
 }
 
+document.addEventListener("DOMContentLoaded", function () {
+    const mobileMenuIcon = document.querySelector(".mobile-menu-icon");
+    const links = document.querySelector(".links");
+
+    // Toggle the links when the mobile menu icon is clicked
+    mobileMenuIcon.addEventListener("click", function () {
+        links.classList.toggle("show");
+    });
+});
+
