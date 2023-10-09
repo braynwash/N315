@@ -576,6 +576,18 @@ nav .links {
   color: white;
 }
 
+@media (max-width: 768px) {
+  .account-wrapper {
+    flex-direction: column;
+    margin-top: 75px;
+  }
+  .account-wrapper .login-here {
+    margin-bottom: 52px;
+  }
+  .blank {
+    min-height: 170px;
+  }
+}
 .cart {
   height: 550px;
   width: 100%;
@@ -777,7 +789,7 @@ nav .links {
 
 .bookclub-content {
   width: 1464;
-  height: 515px;
+  min-height: 515px;
   display: flex;
   margin-bottom: 140px;
 }
@@ -789,6 +801,7 @@ nav .links {
   background-size: cover;
 }
 .bookclub-content .bookclub-text {
+  background-color: red;
   width: 70%;
   margin-left: 40px;
 }
@@ -820,7 +833,7 @@ nav .links {
 
 .eread-content {
   width: 1464;
-  height: 515px;
+  min-height: 515px;
   display: flex;
   margin-bottom: 140px;
 }
