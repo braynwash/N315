@@ -19,10 +19,38 @@ p {
   margin-bottom: 16px;
 }
 
-.hidden {
-  display: none;
+@font-face {
+  font-family: "Caveat";
+  src: url(../css/fonts/Caveat-Regular.ttf);
 }
-
+@font-face {
+  font-family: "Caveat Bold";
+  src: url(../css/fonts/Caveat-Bold.ttf);
+}
+@font-face {
+  font-family: "Gill Sans";
+  src: url(../css/fonts/Gill-Sans.otf);
+}
+@font-face {
+  font-family: "Gill Sans Light";
+  src: url(../css/fonts/Gill-Sans-Light.otf);
+}
+@font-face {
+  font-family: "Gill Sans Italic";
+  src: url(../css/fonts/Gill-Sans-Italic.otf);
+}
+@font-face {
+  font-family: "Lato Black";
+  src: url(../css/fonts/Lato-Black.ttf);
+}
+@font-face {
+  font-family: "Lato Light";
+  src: url(../css/fonts/Lato-Light.ttf);
+}
+@font-face {
+  font-family: "Lato Light Italic";
+  src: url(../css/fonts/Lato-LightItalic.ttf);
+}
 .nav-holder {
   height: 80px;
   width: 100%;
@@ -102,7 +130,6 @@ p {
   position: absolute;
   top: 80px;
   left: 0;
-  height: 200px;
   z-index: 100;
   text-align: right;
 }
@@ -116,6 +143,9 @@ p {
   }
   .nav-holder .hamburger-icon {
     display: block !important;
+  }
+  .hamburger-icon .mobile-menu .login {
+    padding-bottom: 100px;
   }
 }
 .content {

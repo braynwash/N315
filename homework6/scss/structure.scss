@@ -17,6 +17,42 @@ p {
   margin-bottom: 16px;
 }
 
-.hidden {
-  display: none;
+@font-face {
+  font-family: "Caveat";
+  src: url(../css/fonts/Caveat-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Caveat Bold";
+  src: url(../css/fonts/Caveat-Bold.ttf);
+}
+
+@font-face {
+  font-family: "Gill Sans";
+  src: url(../css/fonts/Gill-Sans.otf);
+}
+
+@font-face {
+  font-family: "Gill Sans Light";
+  src: url(../css/fonts/Gill-Sans-Light.otf);
+}
+
+@font-face {
+  font-family: "Gill Sans Italic";
+  src: url(../css/fonts/Gill-Sans-Italic.otf);
+}
+
+@font-face {
+  font-family: "Lato Black";
+  src: url(../css/fonts/Lato-Black.ttf);
+}
+
+@font-face {
+  font-family: "Lato Light";
+  src: url(../css/fonts/Lato-Light.ttf);
+}
+
+@font-face {
+  font-family: "Lato Light Italic";
+  src: url(../css/fonts/Lato-LightItalic.ttf);
 }

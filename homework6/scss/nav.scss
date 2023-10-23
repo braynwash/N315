@@ -80,7 +80,6 @@
     position: absolute;
     top: 80px;
     left: 0;
-    height: 200px;
     z-index: 100;
     text-align: right;
     li {
@@ -95,5 +94,8 @@
   }
   .nav-holder .hamburger-icon {
     display: block !important;
+  }
+  .hamburger-icon .mobile-menu .login {
+    padding-bottom: 100px;
   }
 }
