@@ -17,6 +17,7 @@
       background-color: $yellow;
       border-radius: 50%;
       z-index: 1;
+      filter: drop-shadow(0px 10px 6px #00000042);
     }
     .circle2 {
       width: 167px;
@@ -26,6 +27,7 @@
       position: absolute;
       top: 30px;
       right: 10px;
+      filter: drop-shadow(0px 10px 6px #00000042);
     }
   }
 }

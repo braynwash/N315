@@ -55,7 +55,8 @@ p {
   transition: 0.3s;
 }
 .nav-holder ul .login {
-  background-color: yellow;
+  background-color: #ffd972;
+  filter: drop-shadow(0px 10px 8px rgba(0, 0, 0, 0.2588235294));
   width: 158px;
   height: 52px;
   border-radius: 26px;
@@ -71,7 +72,6 @@ p {
   display: none;
   cursor: pointer;
   margin-right: 15px;
-  background-color: red;
   z-index: 100;
 }
 .nav-holder .hamburger-icon div {
@@ -97,13 +97,14 @@ p {
   justify-content: flex-start;
 }
 .nav-holder .mobile-menu {
+  background-color: white;
   display: none;
   position: absolute;
   top: 80px;
   left: 0;
-  height: calc(100vh - 80px);
-  width: 100%;
+  height: 200px;
   z-index: 100;
+  text-align: right;
 }
 .nav-holder .mobile-menu li {
   margin-bottom: 10px;
@@ -138,6 +139,7 @@ p {
   background-color: #ffd972;
   border-radius: 50%;
   z-index: 1;
+  filter: drop-shadow(0px 10px 6px rgba(0, 0, 0, 0.2588235294));
 }
 .content .box .circle2 {
   width: 167px;
@@ -147,6 +149,7 @@ p {
   position: absolute;
   top: 30px;
   right: 10px;
+  filter: drop-shadow(0px 10px 6px rgba(0, 0, 0, 0.2588235294));
 }
 
 /*# sourceMappingURL=styles.css.map */
