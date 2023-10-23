@@ -44,6 +44,9 @@
     margin: 0 auto;
     display: none;
     cursor: pointer;
+    margin-right: 15px;
+    background-color: red;
+    z-index: 100;
     div {
       width: 35px;
       height: 3px;
