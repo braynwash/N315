@@ -1,0 +1,31 @@
+.content {
+  background-color: $red;
+  height: calc(100vh - 80px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .box {
+    height: 500px;
+    width: 500px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .circle1 {
+      width: 357px;
+      height: 357px;
+      background-color: $yellow;
+      border-radius: 50%;
+      z-index: 1;
+    }
+    .circle2 {
+      width: 167px;
+      height: 167px;
+      background-color: $lightpink;
+      border-radius: 50%;
+      position: absolute;
+      top: 30px;
+      right: 10px;
+    }
+  }
+}

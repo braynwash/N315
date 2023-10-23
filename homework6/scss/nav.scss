@@ -6,7 +6,6 @@
   align-items: center;
   justify-content: space-between;
   font-size: 25px;
-  background-color: red;
   width: 100%;
   a {
     text-decoration: none;
@@ -79,6 +78,7 @@
     left: 0;
     height: calc(100vh - 80px);
     width: 100%;
+    z-index: 100;
     li {
       margin-bottom: 10px;
     }
