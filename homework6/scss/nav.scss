@@ -89,7 +89,7 @@
   .nav-holder nav {
     display: none;
   }
-  .hamburger-icon {
-    display: block;
+  .nav-holder .hamburger-icon {
+    display: block !important;
   }
 }
