@@ -1,3 +1,7 @@
+#underline {
+  text-decoration: underline;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -40,8 +44,8 @@ p {
   src: url(../css/fonts/Gill-Sans-Italic.otf);
 }
 @font-face {
-  font-family: "Lato Black";
-  src: url(../css/fonts/Lato-Black.ttf);
+  font-family: "Lato";
+  src: url(../css/fonts/Lato-Regular.ttf);
 }
 @font-face {
   font-family: "Lato Light";
@@ -52,13 +56,16 @@ p {
   src: url(../css/fonts/Lato-LightItalic.ttf);
 }
 .nav-holder {
-  height: 80px;
+  position: absolute;
+  top: 0;
+  height: 100px;
   width: 100%;
   padding: 0 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   font-size: 25px;
+  font-family: "Caveat";
   width: 100%;
 }
 .nav-holder a {
@@ -81,6 +88,10 @@ p {
 .nav-holder ul li:hover {
   transform: scale(1.1);
   transition: 0.3s;
+}
+.nav-holder ul li .logo {
+  height: 55px;
+  width: 167px;
 }
 .nav-holder ul .login {
   background-color: #ffd972;
@@ -131,7 +142,8 @@ p {
   top: 80px;
   left: 0;
   z-index: 100;
-  text-align: right;
+  padding-top: 10px;
+  height: 250px;
 }
 .nav-holder .mobile-menu li {
   margin-bottom: 10px;
@@ -144,13 +156,20 @@ p {
   .nav-holder .hamburger-icon {
     display: block !important;
   }
-  .hamburger-icon .mobile-menu .login {
-    padding-bottom: 100px;
-  }
 }
+footer {
+  position: absolute;
+  bottom: 0;
+}
+footer .footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
 .content {
+  height: 100vh;
   background-color: #f25c54;
-  height: calc(100vh - 80px);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -162,8 +181,13 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
+  font-family: "Lato";
 }
 .content .box .circle1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 357px;
   height: 357px;
   background-color: #ffd972;
@@ -171,15 +195,41 @@ p {
   z-index: 1;
   filter: drop-shadow(0px 10px 6px rgba(0, 0, 0, 0.2588235294));
 }
+.content .box .circle1 div {
+  width: 50%;
+}
+.content .box .circle1 div h1 {
+  font-family: "Caveat Bold";
+  font-size: 30px;
+  margin-bottom: 40px;
+}
+.content .box .circle1 div p {
+  font-size: 15px;
+  line-height: 20px;
+}
 .content .box .circle2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  font-family: "Lato Light Italic";
   width: 167px;
   height: 167px;
   background-color: #fcbcb8;
   border-radius: 50%;
   position: absolute;
-  top: 30px;
+  top: 20px;
   right: 10px;
   filter: drop-shadow(0px 10px 6px rgba(0, 0, 0, 0.2588235294));
+}
+.content .box .circle2 div {
+  width: 60%;
+}
+
+.home {
+  background-image: linear-gradient(rgba(242, 92, 84, 0.6), rgba(242, 92, 84, 0.6)), url(../images/hero.jpg);
+  background-position: center;
+  background-size: cover;
 }
 
 /*# sourceMappingURL=styles.css.map */

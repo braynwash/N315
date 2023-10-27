@@ -9,12 +9,12 @@
   </head>
   <body>
     <div class="nav-holder">
-      <div class="logo">My Logo</div>
+      <div class="logo"><img src="/images/logo.svg" alt=""></div>
       <nav>
         <ul class="links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Browse</a></li>
-        <li><a href="#">Create Recipe</a></li>
+        <li><a href="#home" id="underline">Home</a></li>
+        <li><a href="#browse">Browse</a></li>
+        <li><a href="#create">Create Recipe</a></li>
         <!-- <li><a href="#" style="display:none;">Your Recipes</a></li> -->
         <li class="login">Login</li>
         </ul>
@@ -32,14 +32,34 @@
           </ul>
       </div>
     </div>
-
-    <div class="content">
+<div id="app">
+    <div class="content home">
       <div class="box">
-        <div class="circle1"></div>
-        <div class="circle2"></div>
+        <div class="circle1">
+          <div>
+          <h1>The Jungle Cook</h1>
+          <p>The home to various 
+            recipes of your choice. 
+            Add your own recipe 
+            today and fill the world 
+            with joy!</p>
+          </div>
+        </div>
+        <div class="circle2">
+          <div>
+          <p>Want to be a Jungle Cook? Go ahead and the kitchen is yours!</p>
+          </div> 
+        </div>
       </div>
     </div>
-
+</div>
+<footer>
+  <div class="footer">
+    <div class="copy"></div>
+    <div class="flinks"></div>
+    <div class="socials"></div>
+  </div>
+</footer>
  <script src="lib/jquery-3.7.1.min.js"></script>
  <script type="module" src="app/app.js"></script>
  <script type="module" src="model/model.js"></script>

@@ -4,7 +4,7 @@ $CavB: "Caveat Bold";
 $GS: "Gill Sans";
 $GSLight: "Gill Sans Light";
 $GSItal: "Gill Sans Italic";
-$Lato: "Lato Black";
+$Lato: "Lato";
 $LLight: "Lato Light";
 $LLItal: "Lato Light Italic";
 
@@ -18,3 +18,8 @@ $red: #f25c54;
 //media sizes
 $tablet: 768px;
 $phone: 360px;
+
+//extras
+#underline {
+  text-decoration: underline;
+}
