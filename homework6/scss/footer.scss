@@ -1,9 +1,37 @@
 footer {
   position: absolute;
   bottom: 0;
+  height: 40px;
+  width: 100%;
+  font-size: 15px;
+  font-family: $LLItal;
   .footer {
+    margin: 0 auto;
+    width: 95%;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    .flinks {
+      display: flex;
+      justify-content: space-between;
+      width: 550px;
+      a {
+        color: black;
+        text-decoration: none;
+      }
+    }
+    .socials {
+      width: 75px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      img {
+        width: 19px;
+        height: 19px;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
   }
 }

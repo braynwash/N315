@@ -160,11 +160,39 @@ p {
 footer {
   position: absolute;
   bottom: 0;
+  height: 40px;
+  width: 100%;
+  font-size: 15px;
+  font-family: "Lato Light Italic";
 }
 footer .footer {
+  margin: 0 auto;
+  width: 95%;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
+}
+footer .footer .flinks {
+  display: flex;
+  justify-content: space-between;
+  width: 550px;
+}
+footer .footer .flinks a {
+  color: black;
+  text-decoration: none;
+}
+footer .footer .socials {
+  width: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+footer .footer .socials img {
+  width: 19px;
+  height: 19px;
+}
+footer .footer .socials img:hover {
+  cursor: pointer;
 }
 
 .content {
