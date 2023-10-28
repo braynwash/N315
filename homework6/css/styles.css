@@ -195,6 +195,14 @@ footer .footer .socials img:hover {
   cursor: pointer;
 }
 
+@media (max-width: 768px) {
+  footer {
+    font-size: 10px;
+  }
+  footer .footer .flinks {
+    width: 350px;
+  }
+}
 .content {
   height: 100vh;
   background-color: #f25c54;

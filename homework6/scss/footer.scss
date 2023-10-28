@@ -35,3 +35,12 @@ footer {
     }
   }
 }
+
+@media (max-width: 768px) {
+  footer {
+    font-size: 10px;
+  }
+  footer .footer .flinks {
+    width: 350px;
+  }
+}
