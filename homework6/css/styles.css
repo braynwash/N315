@@ -311,6 +311,9 @@ footer .footer .socials img:hover {
   margin-bottom: 50px;
   border: none;
   border-bottom: 3px solid black;
+  background-color: transparent;
+}
+.loginPage .signIn input:focus {
   background-color: #ffd972;
 }
 .loginPage .signIn input::placeholder {
@@ -353,7 +356,7 @@ footer .footer .socials img:hover {
   margin-bottom: 50px;
   border: none;
   border-bottom: 3px solid black;
-  background-color: #ffd972;
+  background-color: transparent;
 }
 .loginPage .signUp input::placeholder {
   font-family: "Lato";
@@ -377,6 +380,27 @@ footer .footer .socials img:hover {
   cursor: pointer;
   transform: scale(1.1);
   transition: 0.3s;
+}
+
+@media (max-width: 768px) {
+  .loginPage {
+    display: flex;
+    flex-direction: column;
+  }
+  .loginPage .signIn {
+    margin-top: 170px;
+    margin-right: 0px;
+  }
+  .loginPage .signIn .loginbtn {
+    margin-bottom: 115px;
+  }
+  .loginPage .signUp input {
+    width: 206px;
+  }
+  .loginPage .signUp .signBtn {
+    margin-bottom: 173px;
+    width: 206px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -14,7 +14,10 @@
       margin-bottom: 50px;
       border: none;
       border-bottom: 3px solid black;
-      background-color: $yellow;
+      background-color: transparent;
+      &:focus {
+        background-color: $yellow;
+      }
       &::placeholder {
         font-family: $Lato;
         font-size: 12px;
@@ -58,7 +61,7 @@
       margin-bottom: 50px;
       border: none;
       border-bottom: 3px solid black;
-      background-color: $yellow;
+      background-color: transparent;
       &::placeholder {
         font-family: $Lato;
         font-size: 12px;
@@ -83,5 +86,26 @@
         transition: 0.3s;
       }
     }
+  }
+}
+
+@media (max-width: 768px) {
+  .loginPage {
+    display: flex;
+    flex-direction: column;
+  }
+  .loginPage .signIn {
+    margin-top: 170px;
+    margin-right: 0px;
+  }
+  .loginPage .signIn .loginbtn {
+    margin-bottom: 115px;
+  }
+  .loginPage .signUp input {
+    width: 206px;
+  }
+  .loginPage .signUp .signBtn {
+    margin-bottom: 173px;
+    width: 206px;
   }
 }
