@@ -202,8 +202,7 @@ footer .footer .socials img:hover {
 @media (max-width: 768px) {
   footer {
     font-size: 10px;
-    background-color: #a7e8bd;
-    top: 1000px;
+    top: 975px;
     display: flex;
     align-items: center;
   }
