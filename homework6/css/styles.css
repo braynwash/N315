@@ -156,6 +156,10 @@ p {
   .nav-holder .hamburger-icon {
     display: block !important;
   }
+  .nav-holder .logo {
+    height: 47px;
+    width: 136px;
+  }
 }
 footer {
   position: absolute;
@@ -198,13 +202,16 @@ footer .footer .socials img:hover {
 @media (max-width: 768px) {
   footer {
     font-size: 10px;
+    background-color: #a7e8bd;
+    top: 1000px;
+    display: flex;
+    align-items: center;
   }
   footer .footer .flinks {
     width: 350px;
   }
 }
 .content {
-  height: 100vh;
   background-color: #f25c54;
   display: flex;
   justify-content: center;
@@ -266,6 +273,22 @@ footer .footer .socials img:hover {
   background-image: linear-gradient(rgba(242, 92, 84, 0.6), rgba(242, 92, 84, 0.6)), url(../images/hero.jpg);
   background-position: center;
   background-size: cover;
+  height: 100vh;
+}
+
+@media (max-width: 768px) {
+  .content {
+    min-height: 1024px;
+  }
+  .content .box {
+    display: flex;
+    align-items: center;
+  }
+  .content .box .circle2 {
+    position: absolute;
+    top: -20px;
+    right: 50px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

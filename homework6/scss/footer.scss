@@ -39,6 +39,10 @@ footer {
 @media (max-width: 768px) {
   footer {
     font-size: 10px;
+    background-color: $green;
+    top: 1000px;
+    display: flex;
+    align-items: center;
   }
   footer .footer .flinks {
     width: 350px;

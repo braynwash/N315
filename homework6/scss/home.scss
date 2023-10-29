@@ -1,6 +1,5 @@
 .content {
   // background-color: $green;padding-top: 100px;
-  height: 100vh;
   background-color: $red;
   display: flex;
   justify-content: center;
@@ -66,4 +65,20 @@
     url(../images/hero.jpg);
   background-position: center;
   background-size: cover;
+  height: 100vh;
+}
+
+@media (max-width: 768px) {
+  .content {
+    min-height: 1024px;
+  }
+  .content .box {
+    display: flex;
+    align-items: center;
+  }
+  .content .box .circle2 {
+    position: absolute;
+    top: -20px;
+    right: 50px;
+  }
 }
