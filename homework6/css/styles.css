@@ -207,7 +207,6 @@ footer .footer .socials img:hover {
 @media (max-width: 768px) {
   footer {
     font-size: 10px;
-    top: 975px;
     display: flex;
     align-items: center;
   }
@@ -291,6 +290,9 @@ footer .footer .socials img:hover {
     position: absolute;
     top: -20px;
     right: 50px;
+  }
+  .home footer {
+    top: 975px;
   }
 }
 .loginPage {
@@ -400,6 +402,9 @@ footer .footer .socials img:hover {
   .loginPage .signUp .signBtn {
     margin-bottom: 173px;
     width: 206px;
+  }
+  .loginPage footer {
+    top: 1175px;
   }
 }
 
