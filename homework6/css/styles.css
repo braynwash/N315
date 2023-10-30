@@ -119,7 +119,7 @@ p {
   z-index: 100;
 }
 .nav-holder .hamburger-icon div {
-  width: 35px;
+  width: 31px;
   height: 3px;
   background-color: black;
   margin: 6px 0;
@@ -144,7 +144,7 @@ p {
   background-color: white;
   display: none;
   position: absolute;
-  top: 80px;
+  top: 100px;
   left: 0;
   z-index: 100;
   padding-top: 10px;
@@ -293,6 +293,31 @@ footer .footer .socials img:hover {
   }
   .home footer {
     top: 975px;
+  }
+}
+@media (max-width: 360px) {
+  .home {
+    height: 700px;
+  }
+  .content .box .circle1 {
+    height: 257px;
+    width: 257px;
+  }
+  .content .box .circle1 div h1 {
+    font-size: 20px;
+    margin-bottom: 21px;
+  }
+  .content .box .circle1 div p {
+    font-size: 9px;
+    line-height: 15px;
+  }
+  .content .box .circle2 div p {
+    font-size: 8px;
+  }
+  .content .box .circle2 {
+    width: 121px;
+    height: 121px;
+    top: 50px;
   }
 }
 .loginPage {

@@ -84,3 +84,29 @@
     top: 975px;
   }
 }
+
+@media (max-width: 360px) {
+  .home {
+    height: 700px;
+  }
+  .content .box .circle1 {
+    height: 257px;
+    width: 257px;
+  }
+  .content .box .circle1 div h1 {
+    font-size: 20px;
+    margin-bottom: 21px;
+  }
+  .content .box .circle1 div p {
+    font-size: 9px;
+    line-height: 15px;
+  }
+  .content .box .circle2 div p {
+    font-size: 8px;
+  }
+  .content .box .circle2 {
+    width: 121px;
+    height: 121px;
+    top: 50px;
+  }
+}
