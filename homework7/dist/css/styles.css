@@ -1,56 +1,430 @@
 * {
- margin: 0;
- padding: 0;
- box-sizing: border-box;
-}
-html, body {
- height: 100%
-}
-h1, h2, h3, h4, h5, h6, p {
- margin-bottom: 16px
-}
-
-.wrapper {
-    background-color: lightblue;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html,
+  body {
+    height: 100%;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    margin-bottom: 16px;
+  }
+  
+  @font-face {
+    font-family: "Caveat";
+    src: url(../css/fonts/Caveat-Regular.ttf);
+  }
+  @font-face {
+    font-family: "Caveat Bold";
+    src: url(../css/fonts/Caveat-Bold.ttf);
+  }
+  @font-face {
+    font-family: "Gill Sans";
+    src: url(../css/fonts/Gill-Sans.otf);
+  }
+  @font-face {
+    font-family: "Gill Sans Light";
+    src: url(../css/fonts/Gill-Sans-Light.otf);
+  }
+  @font-face {
+    font-family: "Gill Sans Italic";
+    src: url(../css/fonts/Gill-Sans-Italic.otf);
+  }
+  @font-face {
+    font-family: "Lato";
+    src: url(../css/fonts/Lato-Regular.ttf);
+  }
+  @font-face {
+    font-family: "Lato Light";
+    src: url(../css/fonts/Lato-Light.ttf);
+  }
+  @font-face {
+    font-family: "Lato Light Italic";
+    src: url(../css/fonts/Lato-LightItalic.ttf);
+  }
+  @font-face {
+    font-family: "Lato Black";
+    src: url(../css/fonts/Lato-Black.ttf);
+  }
+  .nav-holder {
+    position: absolute;
+    top: 0;
+    height: 100px;
+    width: 100%;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 25px;
+    font-family: "Caveat";
+    width: 100%;
+  }
+  .nav-holder a {
+    text-decoration: none;
+    color: black;
+  }
+  .nav-holder ul {
+    list-style: none;
+    height: 100%;
+    min-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .nav-holder ul li {
+    margin-right: 40px;
+    padding: 5px;
+    transition: 0.5s;
+  }
+  .nav-holder ul li:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 0.3s;
+  }
+  .nav-holder ul li .logo {
+    height: 55px;
+    width: 167px;
+  }
+  .nav-holder ul .login {
+    background-color: #ffd972;
+    filter: drop-shadow(0px 10px 8px rgba(0, 0, 0, 0.2588235294));
+    width: 158px;
+    height: 52px;
+    border-radius: 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .nav-holder ul .login:hover {
+    cursor: pointer;
+  }
+  .nav-holder .hamburger-icon {
+    margin: 0 auto;
+    display: none;
+    cursor: pointer;
+    margin-right: 15px;
+    z-index: 100;
+  }
+  .nav-holder .hamburger-icon div {
+    width: 31px;
+    height: 3px;
+    background-color: black;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  .nav-holder .open .bar1 {
+    transform: rotate(-45deg) translate(-6px, 6px);
+  }
+  .nav-holder .open .bar2 {
+    opacity: 0;
+  }
+  .nav-holder .open .bar3 {
+    transform: rotate(45deg) translate(-6px, -8px);
+  }
+  .nav-holder .open .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .nav-holder .mobile-menu {
+    background-color: white;
+    display: none;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    z-index: 100;
+    padding-top: 10px;
+    height: 250px;
+  }
+  .nav-holder .mobile-menu li {
+    margin-bottom: 10px;
+  }
+  
+  @media all and (max-width: 768px) {
+    .nav-holder nav {
+      display: none;
+    }
+    .nav-holder .hamburger-icon {
+      display: block !important;
+    }
+    .nav-holder .logo {
+      height: 47px;
+      width: 136px;
+    }
+  }
+  footer {
+    position: absolute;
+    bottom: 0;
+    height: 40px;
+    width: 100%;
+    font-size: 15px;
+    font-family: "Lato Light Italic";
+  }
+  footer .footer {
+    margin: 0 auto;
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  footer .footer .flinks {
+    display: flex;
+    justify-content: space-between;
+    width: 550px;
+  }
+  footer .footer .flinks a {
+    color: black;
+    text-decoration: none;
+  }
+  footer .footer .socials {
+    width: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  footer .footer .socials img {
+    width: 19px;
+    height: 19px;
+  }
+  footer .footer .socials img:hover {
+    cursor: pointer;
+  }
+  
+  @media (max-width: 768px) {
+    footer {
+      font-size: 10px;
+      display: flex;
+      align-items: center;
+    }
+    footer .footer .flinks {
+      width: 350px;
+    }
+  }
+  .content {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .content .box {
+    height: 500px;
+    width: 500px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: "Lato";
+  }
+  .content .box .circle1 {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
-}
-
-.logWrap {
-    width: 800px;
-    height: 500px;
-    border: 2px solid black;
-    border-radius: 10px;
-    background-color: white;
+    width: 357px;
+    height: 357px;
+    background-color: #ffd972;
+    border-radius: 50%;
+    z-index: 1;
+    filter: drop-shadow(0px 10px 6px rgba(0, 0, 0, 0.2588235294));
+  }
+  .content .box .circle1 div {
+    width: 50%;
+  }
+  .content .box .circle1 div h1 {
+    font-family: "Caveat Bold";
+    font-size: 30px;
+    margin-bottom: 40px;
+  }
+  .content .box .circle1 div p {
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .content .box .circle2 {
     display: flex;
-    text-align: center;
-}
-
-.createAcc {
-    width: 50%;
-    height: 100%;
-    border-right: 2px solid black;
-}
-
-.signIn {
-    width: 50%;
-}
-
-h1 {
-    margin-top: 25px;
-    margin-bottom: 50px;
-}
-
-input {
-    display: block;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    font-family: "Lato Light Italic";
+    width: 167px;
+    height: 167px;
+    background-color: #fcbcb8;
+    border-radius: 50%;
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    filter: drop-shadow(0px 10px 6px rgba(0, 0, 0, 0.2588235294));
+  }
+  .content .box .circle2 div {
+    width: 60%;
+  }
+  
+  .home {
+    background-image: linear-gradient(rgba(242, 92, 84, 0.6), rgba(242, 92, 84, 0.6)), url(../images/hero.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  
+  @media (max-width: 768px) {
+    .content {
+      min-height: 1024px;
+    }
+    .content .box {
+      display: flex;
+      align-items: center;
+    }
+    .content .box .circle2 {
+      position: absolute;
+      top: -20px;
+      right: 50px;
+    }
+    .home footer {
+      top: 975px;
+    }
+  }
+  @media (max-width: 360px) {
+    .home {
+      height: 700px;
+    }
+    .content .box .circle1 {
+      height: 257px;
+      width: 257px;
+    }
+    .content .box .circle1 div h1 {
+      font-size: 20px;
+      margin-bottom: 21px;
+    }
+    .content .box .circle1 div p {
+      font-size: 9px;
+      line-height: 15px;
+    }
+    .content .box .circle2 div p {
+      font-size: 8px;
+    }
+    .content .box .circle2 {
+      width: 121px;
+      height: 121px;
+      top: 50px;
+    }
+  }
+  .loginPage {
+    background-color: #ffd972;
+  }
+  .loginPage .signIn {
+    margin-right: 20%;
+  }
+  .loginPage .signIn h1 {
+    font-size: 30px;
+    font-family: "Lato Black";
+    margin-bottom: 60px;
+  }
+  .loginPage .signIn input {
+    width: 200px;
     height: 30px;
-    width: 50%;
-    margin-left: 100px;
-    margin-bottom: 20px;
-}
-
-input::placeholder {
-    padding-left: 5px;
-}
+    display: block;
+    margin-bottom: 50px;
+    border: none;
+    border-bottom: 3px solid black;
+    background-color: transparent;
+  }
+  .loginPage .signIn input:focus {
+    background-color: #ffd972;
+  }
+  .loginPage .signIn input::placeholder {
+    font-family: "Lato";
+    font-size: 12px;
+    color: black;
+    opacity: 1;
+  }
+  .loginPage .signIn .loginbtn {
+    background-color: #ffd972;
+    filter: drop-shadow(0px 10px 8px rgba(0, 0, 0, 0.2588235294));
+    width: 209px;
+    height: 52px;
+    border-radius: 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Caveat";
+    font-size: 25px;
+  }
+  .loginPage .signIn .loginbtn:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 0.3s;
+  }
+  .loginPage .signUp p {
+    font-size: 12px;
+    font-family: "Lato Light Italic";
+    margin-bottom: 0px;
+  }
+  .loginPage .signUp h1 {
+    font-size: 30px;
+    font-family: "Lato Black";
+    margin-bottom: 60px;
+  }
+  .loginPage .signUp input {
+    width: 250px;
+    height: 25px;
+    display: block;
+    margin-bottom: 50px;
+    border: none;
+    border-bottom: 3px solid black;
+    background-color: transparent;
+  }
+  .loginPage .signUp input::placeholder {
+    font-family: "Lato";
+    font-size: 12px;
+    color: black;
+    opacity: 1;
+  }
+  .loginPage .signUp .signBtn {
+    background-color: #ffd972;
+    filter: drop-shadow(0px 10px 8px rgba(0, 0, 0, 0.2588235294));
+    width: 250px;
+    height: 52px;
+    border-radius: 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Caveat";
+    font-size: 25px;
+  }
+  .loginPage .signUp .signBtn:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 0.3s;
+  }
+  
+  @media (max-width: 768px) {
+    .loginPage {
+      display: flex;
+      flex-direction: column;
+    }
+    .loginPage .signIn {
+      margin-top: 170px;
+      margin-right: 0px;
+    }
+    .loginPage .signIn .loginbtn {
+      margin-bottom: 115px;
+    }
+    .loginPage .signUp input {
+      width: 206px;
+    }
+    .loginPage .signUp .signBtn {
+      margin-bottom: 173px;
+      width: 206px;
+    }
+    .loginPage footer {
+      top: 1175px;
+    }
+  }

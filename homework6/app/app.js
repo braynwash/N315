@@ -14,10 +14,6 @@ function toggleMenu() {
     mobileBtn.classList.toggle("open");
 }
 
-function initListeners() {
-    console.log("Test");
-}
-
 function initUrlListeners() {
     $(window).on("hashchange", route);
     route();
