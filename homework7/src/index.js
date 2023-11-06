@@ -20,9 +20,11 @@ function initListeners() {
     $("#createAccBtn").on("click", (e) => {
         e.preventDefault();
         let fName = $("#fname").val();
+        let lName = $("#lname").val();
         let email = $("#Cemail").val();
         let pw = $("#Cpw").val();
         console.log(fName);
+        console.log(lName);
 createUserWithEmailAndPassword(auth, email, pw)
   .then((userCredential) => {
     // Signed up 

@@ -6,7 +6,6 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "serve": "live-server dist",
-    "compile": "sass dist/scss/styles.scss dist/css/styles.css -w",
     "build-webpack": "webpack"
   },
   "keywords": [],
