@@ -323,7 +323,7 @@ footer .footer .socials img:hover {
   background-image: linear-gradient(rgba(167, 232, 189, 0.6), rgba(167, 232, 189, 0.6)), url(../images/recipe-hero.jpg);
   background-position: center;
   background-size: cover;
-  height: 1000px;
+  min-height: 1000px;
   display: block;
 }
 .browse .browseHolder {
@@ -350,6 +350,12 @@ footer .footer .socials img:hover {
   width: 60%;
   background-color: #ffd972;
   border-radius: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-family: "Caveat";
+  color: black;
 }
 .browse .browseHolder .recipeHolder .recipeCard .recipeText {
   height: 100%;
@@ -406,6 +412,37 @@ footer .footer .socials img:hover {
   background-image: url(../images/recipe-chowmein.jpg);
   background-position: center;
   background-size: cover;
+}
+
+.browse .browseHolder .recipeHolder .yourHolder {
+  display: block;
+}
+.browse .browseHolder .recipeHolder .yourHolder .yourBtn {
+  background-color: #ffd972;
+  height: 42px;
+  width: 127px;
+  border-radius: 26px;
+  font-size: 20px;
+  font-family: "Caveat";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  filter: drop-shadow(0px 10px 8px rgba(0, 0, 0, 0.2588235294));
+}
+.browse .browseHolder .recipeHolder .yourHolder .recipeCard .recipeImg {
+  height: 100%;
+  width: 60%;
+  background-color: #ffd972;
+  border-radius: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.browse .browseHolder .recipeHolder .yourHolder .btnHolder {
+  width: 60%;
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .loginPage {
