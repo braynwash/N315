@@ -63,7 +63,6 @@ p {
   position: absolute;
   top: 0;
   height: 100px;
-  width: 100%;
   padding: 0 20px;
   display: flex;
   align-items: center;
@@ -320,6 +319,95 @@ footer .footer .socials img:hover {
     top: 50px;
   }
 }
+.browse {
+  background-image: linear-gradient(rgba(167, 232, 189, 0.6), rgba(167, 232, 189, 0.6)), url(../images/recipe-hero.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 1000px;
+  display: block;
+}
+.browse .browseHolder {
+  padding-top: 195px;
+  margin-left: 10%;
+}
+.browse .browseHolder h1 {
+  font-family: "Caveat Bold";
+  font-size: 25px;
+}
+.browse .browseHolder .recipeHolder {
+  display: flex;
+  align-items: center;
+}
+.browse .browseHolder .recipeHolder .recipeCard {
+  margin-top: 50px;
+  margin-right: 10%;
+  display: flex;
+  height: 263px;
+  width: 524px;
+}
+.browse .browseHolder .recipeHolder .recipeCard a {
+  height: 100%;
+  width: 60%;
+  background-color: #ffd972;
+  border-radius: 24px;
+}
+.browse .browseHolder .recipeHolder .recipeCard .recipeText {
+  height: 100%;
+  width: 40%;
+  border-radius: 24px;
+  background-color: white;
+  text-align: center;
+}
+.browse .browseHolder .recipeHolder .recipeCard .recipeText h1 {
+  font-family: "Lato Black";
+  font-size: 18px;
+  text-decoration: underline;
+  margin-top: 42px;
+}
+.browse .browseHolder .recipeHolder .recipeCard .recipeText p {
+  font-family: "Lato";
+  font-size: 10px;
+}
+.browse .browseHolder .recipeHolder .recipeCard .recipeText .sideBy {
+  display: flex;
+  justify-content: center;
+}
+.browse .browseHolder .recipeHolder .recipeCard .recipeText .sideBy img {
+  height: 23px;
+  width: 24px;
+}
+.browse .browseHolder .recipeHolder .recipeCard .recipeText .sideBy p {
+  margin-top: 5px;
+  margin-left: 17px;
+}
+.browse footer {
+  top: 950px;
+}
+
+.pizza {
+  background-image: url(../images/recipe-pizza.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.burger {
+  background-image: url(../images/recipe-burger.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.pilaf {
+  background-image: url(../images/recipe-pilaf.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.chow {
+  background-image: url(../images/recipe-chowmein.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
 .loginPage {
   background-color: #ffd972;
 }
