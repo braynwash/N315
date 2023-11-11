@@ -1,0 +1,114 @@
+.loginPage {
+  background-color: $yellow;
+  .signIn {
+    margin-right: 20%;
+    h1 {
+      font-size: 30px;
+      font-family: $LBlack;
+      margin-bottom: 60px;
+    }
+    input {
+      width: 200px;
+      height: 30px;
+      display: block;
+      margin-bottom: 50px;
+      border: none;
+      border-bottom: 3px solid black;
+      background-color: transparent;
+      &:focus {
+        background-color: $yellow;
+      }
+      &::placeholder {
+        font-family: $Lato;
+        font-size: 12px;
+        color: black;
+        opacity: 1;
+      }
+    }
+    .loginbtn {
+      background-color: $yellow;
+      filter: drop-shadow(0px 10px 8px #00000042);
+      width: 209px;
+      height: 52px;
+      border-radius: 26px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: $Cav;
+      font-size: 25px;
+      &:hover {
+        cursor: pointer;
+        transform: scale(1.1);
+        transition: 0.3s;
+      }
+    }
+  }
+  .signUp {
+    p {
+      font-size: 12px;
+      font-family: $LLItal;
+      margin-bottom: 0px;
+    }
+    h1 {
+      font-size: 30px;
+      font-family: $LBlack;
+      margin-bottom: 60px;
+    }
+    input {
+      width: 250px;
+      height: 25px;
+      display: block;
+      margin-bottom: 50px;
+      border: none;
+      border-bottom: 3px solid black;
+      background-color: transparent;
+      &::placeholder {
+        font-family: $Lato;
+        font-size: 12px;
+        color: black;
+        opacity: 1;
+      }
+    }
+    .signBtn {
+      background-color: $yellow;
+      filter: drop-shadow(0px 10px 8px #00000042);
+      width: 250px;
+      height: 52px;
+      border-radius: 26px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: $Cav;
+      font-size: 25px;
+      &:hover {
+        cursor: pointer;
+        transform: scale(1.1);
+        transition: 0.3s;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .loginPage {
+    display: flex;
+    flex-direction: column;
+  }
+  .loginPage .signIn {
+    margin-top: 170px;
+    margin-right: 0px;
+  }
+  .loginPage .signIn .loginbtn {
+    margin-bottom: 115px;
+  }
+  .loginPage .signUp input {
+    width: 206px;
+  }
+  .loginPage .signUp .signBtn {
+    margin-bottom: 173px;
+    width: 206px;
+  }
+  .loginPage footer {
+    top: 1175px;
+  }
+}
