@@ -1,0 +1,61 @@
+.view {
+  min-height: 1542px;
+  max-width: 1300px;
+  display: block;
+  margin: 0 auto;
+  .ingredList {
+    margin-bottom: 58px;
+  }
+  h1 {
+    font-size: 25px;
+    font-family: $LBlack;
+    margin-bottom: 35px;
+  }
+  h2 {
+    font-size: 20px;
+    font-family: $LBlack;
+    margin-bottom: 35px;
+    margin-top: 35px;
+  }
+  .recipeInput {
+    font-family: $Cav;
+    font-size: 20px;
+  }
+  .viewCard {
+    display: flex;
+    margin-top: 243px;
+    width: 980px;
+    height: 421px;
+    margin-bottom: 68px;
+    .viewImg {
+      background-color: $yellow;
+      height: 100%;
+      width: 50%;
+      margin-right: 5%;
+    }
+    .viewText {
+      width: 50%;
+    }
+  }
+  .editBtn {
+    margin-top: 62px;
+    background-color: $yellow;
+    height: 42px;
+    width: 127px;
+    font-size: 20px;
+
+    font-family: $Cav;
+    border-radius: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    a {
+      text-decoration: none;
+      color: black;
+    }
+  }
+  footer {
+    top: 1740px;
+    left: 0;
+  }
+}

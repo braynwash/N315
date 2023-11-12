@@ -414,6 +414,67 @@ footer .footer .socials img:hover {
   background-size: cover;
 }
 
+.view {
+  min-height: 1542px;
+  max-width: 1300px;
+  display: block;
+  margin: 0 auto;
+}
+.view .ingredList {
+  margin-bottom: 58px;
+}
+.view h1 {
+  font-size: 25px;
+  font-family: "Lato Black";
+  margin-bottom: 35px;
+}
+.view h2 {
+  font-size: 20px;
+  font-family: "Lato Black";
+  margin-bottom: 35px;
+  margin-top: 35px;
+}
+.view .recipeInput {
+  font-family: "Caveat";
+  font-size: 20px;
+}
+.view .viewCard {
+  display: flex;
+  margin-top: 243px;
+  width: 980px;
+  height: 421px;
+  margin-bottom: 68px;
+}
+.view .viewCard .viewImg {
+  background-color: #ffd972;
+  height: 100%;
+  width: 50%;
+  margin-right: 5%;
+}
+.view .viewCard .viewText {
+  width: 50%;
+}
+.view .editBtn {
+  margin-top: 62px;
+  background-color: #ffd972;
+  height: 42px;
+  width: 127px;
+  font-size: 20px;
+  font-family: "Caveat";
+  border-radius: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.view .editBtn a {
+  text-decoration: none;
+  color: black;
+}
+.view footer {
+  top: 1740px;
+  left: 0;
+}
+
 .loginPage {
   background-color: #ffd972;
 }
