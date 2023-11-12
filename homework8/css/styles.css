@@ -588,7 +588,7 @@ footer .footer .socials img:hover {
   }
 }
 .userForm {
-  width: 980px;
+  max-width: 980px;
   margin: 0 auto;
   min-height: 1967px;
   padding-top: 52px;
@@ -596,14 +596,16 @@ footer .footer .socials img:hover {
   text-align: left;
 }
 .userForm h1 {
+  margin-left: 2%;
   margin-top: 195px;
   margin-bottom: 72px;
   font-family: "Caveat Bold";
   font-size: 25px;
 }
 .userForm input {
+  margin: 0 auto;
   height: 50px;
-  width: 100%;
+  width: 95%;
   display: block;
   margin-bottom: 50px;
   border: none;
@@ -615,10 +617,11 @@ footer .footer .socials img:hover {
 .userForm .formStart {
   position: relative;
   width: 100%;
+  margin: 0 auto;
 }
 .userForm .formStart .imageBtn {
   position: absolute;
-  right: 0;
+  right: 25px;
   top: 8px;
   width: 110px;
   height: 36px;
@@ -640,6 +643,10 @@ footer .footer .socials img:hover {
   font-family: "Lato Light";
   font-size: 20px;
 }
+.userForm .formIngred p,
+.userForm .formInstruct p {
+  margin-left: 2%;
+}
 .userForm .submitBtn {
   width: 422px;
   height: 52px;
@@ -657,7 +664,7 @@ footer .footer .socials img:hover {
 }
 .userForm .addBtn {
   position: absolute;
-  right: 0;
+  right: 25px;
   bottom: 10px;
   height: 38px;
   width: 38px;
@@ -676,6 +683,60 @@ footer .footer .socials img:hover {
   left: 0;
 }
 
+@media (max-width: 768px) {
+  .userForm h1 {
+    text-align: center;
+  }
+  .userForm input {
+    max-width: 560px;
+    font-size: 16px;
+  }
+  .userForm .formStart .imageBtn {
+    right: 40px;
+  }
+  .userForm .addBtn {
+    right: 40px;
+  }
+  .userForm .formIngred p {
+    margin-left: 6%;
+  }
+  .userForm .formInstruct p {
+    margin-left: 6%;
+  }
+  .userForm .submitBtn {
+    max-width: 354px;
+  }
+}
+@media (max-width: 320px) {
+  .userForm h1 {
+    font-size: 20px;
+  }
+  .userForm input {
+    max-width: 283px;
+    font-size: 12px;
+  }
+  .userForm .formStart .imageBtn {
+    font-size: 12px;
+    right: 20px;
+    width: 92px;
+    height: 33px;
+  }
+  .userForm .addBtn {
+    right: 20px;
+    font-size: 16px;
+  }
+  .userForm .formIngred p {
+    margin-left: 5%;
+  }
+  .userForm .formInstruct p {
+    margin-left: 5%;
+  }
+  .userForm .submitBtn {
+    max-width: 283px;
+    margin-top: 118px;
+    font-size: 20px;
+  }
+}
 .browse .browseHolder .recipeHolder .yourHolder {
   display: block;
 }

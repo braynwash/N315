@@ -1,19 +1,21 @@
 .userForm {
-  width: 980px;
+  max-width: 980px;
   margin: 0 auto;
   min-height: 1967px;
   padding-top: 52px;
   display: block;
   text-align: left;
   h1 {
+    margin-left: 2%;
     margin-top: 195px;
     margin-bottom: 72px;
     font-family: $CavB;
     font-size: 25px;
   }
   input {
+    margin: 0 auto;
     height: 50px;
-    width: 100%;
+    width: 95%;
     display: block;
     margin-bottom: 50px;
     border: none;
@@ -25,9 +27,10 @@
   .formStart {
     position: relative;
     width: 100%;
+    margin: 0 auto;
     .imageBtn {
       position: absolute;
-      right: 0;
+      right: 25px;
       top: 8px;
       width: 110px;
       height: 36px;
@@ -49,6 +52,9 @@
     position: relative;
     font-family: $LLight;
     font-size: 20px;
+    p {
+      margin-left: 2%;
+    }
   }
   .submitBtn {
     width: 422px;
@@ -68,7 +74,7 @@
 
   .addBtn {
     position: absolute;
-    right: 0;
+    right: 25px;
     bottom: 10px;
     height: 38px;
     width: 38px;
@@ -85,5 +91,61 @@
   footer {
     top: 1925px;
     left: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .userForm h1 {
+    text-align: center;
+  }
+  .userForm input {
+    max-width: 560px;
+    font-size: 16px;
+  }
+  .userForm .formStart .imageBtn {
+    right: 40px;
+  }
+  .userForm .addBtn {
+    right: 40px;
+  }
+  .userForm .formIngred p {
+    margin-left: 6%;
+  }
+  .userForm .formInstruct p {
+    margin-left: 6%;
+  }
+  .userForm .submitBtn {
+    max-width: 354px;
+  }
+}
+
+@media (max-width: 320px) {
+  .userForm h1 {
+    font-size: 20px;
+  }
+  .userForm input {
+    max-width: 283px;
+    font-size: 12px;
+  }
+  .userForm .formStart .imageBtn {
+    font-size: 12px;
+    right: 20px;
+    width: 92px;
+    height: 33px;
+  }
+  .userForm .addBtn {
+    right: 20px;
+    font-size: 16px;
+  }
+  .userForm .formIngred p {
+    margin-left: 5%;
+  }
+  .userForm .formInstruct p {
+    margin-left: 5%;
+  }
+  .userForm .submitBtn {
+    max-width: 283px;
+    margin-top: 118px;
+    font-size: 20px;
   }
 }
