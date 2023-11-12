@@ -97,3 +97,55 @@
   background-position: center;
   background-size: cover;
 }
+
+@media (max-width: 768px) {
+  .browse {
+    min-height: 1600px;
+  }
+  .browse .browseHolder .recipeHolder {
+    flex-direction: column;
+  }
+  .browse .browseHolder .recipeHolder .recipeCard .recipeText h1 {
+    font-size: 15px;
+  }
+  .browse .browseHolder .recipeHolder .recipeCard .recipeText p {
+    font-size: 9px;
+  }
+  .browse footer {
+    top: 1550px;
+  }
+}
+
+@media (max-width: 320px) {
+  .browse {
+    min-height: 2100px;
+  }
+  .browse .browseHolder h1 {
+    font-size: 20px;
+    margin-bottom: 21px;
+  }
+  .browse .browseHolder .recipeHolder .recipeCard {
+    flex-direction: column;
+    width: 300px;
+    height: 375px;
+  }
+  .browse .browseHolder .recipeHolder .recipeCard a {
+    width: 100%;
+    height: 40%;
+  }
+  .browse .browseHolder .recipeHolder .recipeCard .recipeText {
+    width: 100%;
+    height: 60%;
+  }
+  .browse .browseHolder .recipeHolder .recipeCard .recipeText h1 {
+    font-size: 15px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+  }
+  .browse .browseHolder .recipeHolder .recipeCard .recipeText p {
+    font-size: 9px;
+  }
+  .browse footer {
+    top: 2050px;
+  }
+}
