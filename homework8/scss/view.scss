@@ -1,6 +1,6 @@
 .view {
   min-height: 1542px;
-  max-width: 1300px;
+  width: 1300px;
   display: block;
   margin: 0 auto;
   .ingredList {
@@ -23,15 +23,23 @@
   }
   .viewCard {
     display: flex;
+    position: relative;
+    margin: 0 auto;
     margin-top: 243px;
-    width: 980px;
-    height: 421px;
+    min-width: 100%;
+    min-height: 421px;
     margin-bottom: 68px;
+    .recipeTitle {
+      transform: rotate(-90deg);
+      position: absolute;
+      top: 195px;
+      left: -110px;
+    }
     .viewImg {
-      background-color: $yellow;
       height: 100%;
-      width: 50%;
+      width: 100%;
       margin-right: 5%;
+      z-index: 100;
     }
     .viewText {
       min-width: 50%;
@@ -56,5 +64,58 @@
   footer {
     top: 1740px;
     left: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .view {
+    width: 456px;
+    min-height: 2082px;
+  }
+  .view .viewCard {
+    flex-direction: column;
+    max-width: 50%;
+  }
+  .view .viewCard .viewImg {
+    height: 421px;
+    max-width: 100%;
+    margin-bottom: 58px;
+  }
+  .view .viewCard .viewText {
+    width: 50%;
+  }
+  .view footer {
+    top: 2270px;
+  }
+}
+
+@media (max-width: 320px) {
+  .view {
+    max-width: 251px;
+    min-height: 1751px;
+  }
+  .view h1 {
+    font-size: 20px;
+  }
+  .view p {
+    font-size: 16px;
+  }
+  .view .viewCard {
+    margin-top: 164px;
+  }
+  .view .viewCard .recipeTitle {
+    left: -85px;
+    top: 145px;
+  }
+  .view .viewCard .viewImg {
+    height: 226px;
+    max-width: 251px;
+    margin-bottom: 58px;
+  }
+  .view .viewCard .viewText {
+    max-width: 200px;
+  }
+  .view footer {
+    top: 2270px;
   }
 }
