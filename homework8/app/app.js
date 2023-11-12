@@ -10,10 +10,6 @@ function changePage(hashTag, pageID) {
 }
 }
 
-function loggedIn() {
-    
-}
-
 function route() {
     let hashTag = window.location.hash;
     let pageID = hashTag.replace("#", "");

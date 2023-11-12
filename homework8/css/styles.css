@@ -414,37 +414,6 @@ footer .footer .socials img:hover {
   background-size: cover;
 }
 
-.browse .browseHolder .recipeHolder .yourHolder {
-  display: block;
-}
-.browse .browseHolder .recipeHolder .yourHolder .yourBtn {
-  background-color: #ffd972;
-  height: 42px;
-  width: 127px;
-  border-radius: 26px;
-  font-size: 20px;
-  font-family: "Caveat";
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  filter: drop-shadow(0px 10px 8px rgba(0, 0, 0, 0.2588235294));
-}
-.browse .browseHolder .recipeHolder .yourHolder .recipeCard .recipeImg {
-  height: 100%;
-  width: 60%;
-  background-color: #ffd972;
-  border-radius: 24px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.browse .browseHolder .recipeHolder .yourHolder .btnHolder {
-  width: 60%;
-  margin-top: 15px;
-  display: flex;
-  justify-content: space-evenly;
-}
-
 .loginPage {
   background-color: #ffd972;
 }
@@ -556,6 +525,125 @@ footer .footer .socials img:hover {
   .loginPage footer {
     top: 1175px;
   }
+}
+.userForm {
+  width: 980px;
+  margin: 0 auto;
+  min-height: 1967px;
+  padding-top: 52px;
+  display: block;
+  text-align: left;
+}
+.userForm h1 {
+  margin-top: 195px;
+  margin-bottom: 72px;
+  font-family: "Caveat Bold";
+  font-size: 25px;
+}
+.userForm input {
+  height: 50px;
+  width: 100%;
+  display: block;
+  margin-bottom: 50px;
+  border: none;
+  border-bottom: 3px solid black;
+  padding: 5px;
+  font-size: 20px;
+  font-family: "Lato Light";
+}
+.userForm .formStart {
+  position: relative;
+  width: 100%;
+}
+.userForm .formStart .imageBtn {
+  position: absolute;
+  right: 0;
+  top: 8px;
+  width: 110px;
+  height: 36px;
+  background-color: #fcbcb8;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 17px;
+  filter: drop-shadow(0px 5px 6px rgba(0, 0, 0, 0.0862745098));
+  font-family: "Caveat";
+  cursor: pointer;
+}
+.userForm .formIngred,
+.userForm .formInstruct {
+  width: 100%;
+  margin-top: 100px;
+  position: relative;
+  font-family: "Lato Light";
+  font-size: 20px;
+}
+.userForm .submitBtn {
+  width: 422px;
+  height: 52px;
+  background-color: #fcbcb8;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  font-family: "Caveat";
+  border-radius: 25px;
+  cursor: pointer;
+  margin-top: 109px;
+  filter: drop-shadow(0px 10px 6px rgba(0, 0, 0, 0.0862745098));
+}
+.userForm .addBtn {
+  position: absolute;
+  right: 0;
+  bottom: 10px;
+  height: 38px;
+  width: 38px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 25px;
+  color: white;
+  background-color: #fcbcb8;
+  font-family: "Gill Sans Light";
+  cursor: pointer;
+}
+.userForm footer {
+  top: 1925px;
+  left: 0;
+}
+
+.browse .browseHolder .recipeHolder .yourHolder {
+  display: block;
+}
+.browse .browseHolder .recipeHolder .yourHolder .yourBtn {
+  background-color: #ffd972;
+  height: 42px;
+  width: 127px;
+  border-radius: 26px;
+  font-size: 20px;
+  font-family: "Caveat";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  filter: drop-shadow(0px 10px 8px rgba(0, 0, 0, 0.2588235294));
+}
+.browse .browseHolder .recipeHolder .yourHolder .recipeCard .recipeImg {
+  height: 100%;
+  width: 60%;
+  background-color: #ffd972;
+  border-radius: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.browse .browseHolder .recipeHolder .yourHolder .btnHolder {
+  width: 60%;
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 /*# sourceMappingURL=styles.css.map */
