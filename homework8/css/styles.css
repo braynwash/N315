@@ -818,4 +818,46 @@ footer .footer .socials img:hover {
   justify-content: space-evenly;
 }
 
+@media (max-width: 320px) {
+  .browse .browseHolder {
+    margin: 0 auto;
+  }
+  .browse .browseHolder h1 {
+    margin-left: 5%;
+  }
+  .browse .browseHolder .recipeHolder .yourHolder .recipeCard {
+    flex-direction: column;
+    width: 289px;
+    height: 375px;
+    margin: 0 auto;
+  }
+  .browse .browseHolder .recipeHolder .yourHolder .recipeCard .recipeImg {
+    width: 100%;
+    height: 40%;
+  }
+  .browse .browseHolder .recipeHolder .yourHolder .recipeCard .recipeText {
+    width: 100%;
+    height: 60%;
+  }
+  .browse .browseHolder .recipeHolder .yourHolder .recipeCard .recipeText h1 {
+    font-size: 15px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+  }
+  .browse .browseHolder .recipeHolder .yourHolder .recipeCard .recipeText p {
+    font-size: 9px;
+  }
+  .browse .browseHolder .recipeHolder .yourHolder .btnHolder {
+    width: 100%;
+  }
+  .browse .browseHolder .recipeHolder .yourHolder .yourBtn {
+    font-size: 17px;
+    width: 141px;
+    height: 37px;
+  }
+  .browse footer {
+    top: 2050px;
+  }
+}
+
 /*# sourceMappingURL=styles.css.map */
