@@ -73,6 +73,7 @@ p {
 }
 .nav-holder a {
   text-decoration: none;
+  margin-right: 40px;
   color: black;
 }
 .nav-holder ul {
@@ -507,6 +508,7 @@ footer .footer .socials img:hover {
   height: 100%;
   width: 100%;
   margin-right: 5%;
+  background-color: red;
   z-index: 100;
 }
 .view .viewCard .viewText {
