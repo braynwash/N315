@@ -76,13 +76,18 @@ $(document).on("click", ".recipeImg a", function(e) {
     console.log("Custom view clicked!");
 });
 
-$(document).on("click", ".editBtn a", function(e) {
+$(document).on("click", "#edit a", function(e) {
     e.preventDefault();
     changePage("edit");
     console.log("Edit recipe clicked!");
 });
 
+$(document).on("click", "#delete a", function(e) {
+    e.preventDefault();
+    console.log("Delete!");
+});
+
 $(document).ready(function () {
-    changePage("pview");
+    changePage("home");
     initListeners();
 })
