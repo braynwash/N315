@@ -82,8 +82,11 @@ $(document).on("click", "#edit a", function(e) {
     console.log("Edit recipe clicked!");
 });
 
-$(document).on("click", "#delete a", function(e) {
+$(document).on("click", "#delete", function(e) {
     e.preventDefault();
+    $(".yourHolder").append(`<p>You have no recipes.</p>`);
+    $('.recipeCard').remove();
+    $('.btnHolder').remove();
     console.log("Delete!");
 });
 
