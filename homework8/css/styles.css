@@ -879,6 +879,8 @@ footer .footer .socials img:hover {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-position: center;
+  background-size: cover;
 }
 .browse .browseHolder .recipeHolder .yourHolder .recipeCard .recipeImg img {
   height: 100%;

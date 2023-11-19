@@ -22,8 +22,8 @@ export function changePage(pageName) {
         $.each(recipes, (idx, recipe) => {
             $(".yourHolder").append(`
             <div class="recipeCard">
-            <div class="recipeImg">
-                <img src="${recipe.imagePath}" alt="">
+            <div class="recipeImg" style="background-image:url('${recipe.imagePath}');">
+                <a class="yourBtn" id="view" href="#">View</a>
             </div>
             <div class="recipeText">
                 <h1>${recipe.itemName}</h1>
