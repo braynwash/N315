@@ -64,6 +64,18 @@ export function addFormListener() {
     });
 }
 
+$(document).on("click", ".recipeCard a", function(e) {
+    e.preventDefault();
+    changePage("pview");
+    console.log("Recipe link clicked!");
+});
+
+$(document).on("click", ".recipeImg a", function(e) {
+    e.preventDefault();
+    changePage("view");
+    console.log("Recipe link clicked!");
+});
+
 $(document).ready(function () {
     changePage("home");
     initListeners();
