@@ -851,6 +851,11 @@ footer .footer .socials img:hover {
     font-size: 20px;
   }
 }
+.browse .browseHolder .recipeHolder p {
+  font-size: 25px;
+  margin-top: 10px;
+  font-family: "Lato Light";
+}
 .browse .browseHolder .recipeHolder .yourHolder {
   display: block;
 }
@@ -874,6 +879,11 @@ footer .footer .socials img:hover {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.browse .browseHolder .recipeHolder .yourHolder .recipeCard .recipeImg img {
+  height: 100%;
+  width: 100%;
+  border-radius: 24px;
 }
 .browse .browseHolder .recipeHolder .yourHolder .btnHolder {
   width: 60%;

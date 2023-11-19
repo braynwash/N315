@@ -17,34 +17,31 @@ export function changePage(pageName) {
         $("#app").html(data);
         addFormListener();
         if(recipes.length == 0) {
-            $(".vr").append(`<p>You have no recipes.</p>`);
+            $(".yourHolder").append(`<p>You have no recipes.</p>`);
         } else {
         $.each(recipes, (idx, recipe) => {
-            $(".recipeHolder").append(`
+            $(".yourHolder").append(`
             <div class="recipeCard">
-            <div class="imgHolder">
+            <div class="recipeImg">
                 <img src="${recipe.imagePath}" alt="">
             </div>
-            <div class="titleDesc">
-                <h2>Awesome buny says: ${recipe.itemName}</h2>
-                <h3>Description</h3>
-                <p>Yummy yum carrot ipsum</p>
-                <div class="ingredients">
-                    <h2>Ingredients</h2>
-                    <ul>
-                    ${(() => { let htmlString = ""; $.each(recipe.ingredients, (idx, ingredient) => { let keyName = "ingredient" + idx; htmlString += `<li>${ingredient[keyName]}</li>`; }); 
-                    return htmlString; })()}
-                    </ul>
+            <div class="recipeText">
+                <h1>${recipe.itemName}</h1>
+                <p>${recipe.itemDesc}</p>
+                <div class="sideBy">
+                    <img src="/images/time.svg" alt="">
+                    <p>${recipe.itemTime}</p>
                 </div>
-                <div class="instructions">
-                    <h2>Instructions</h2>
-                    <ol>
-                    ${(() => { let htmlString = ""; $.each(recipe.instructions, (idx, instruction) => { let keyName = "instruction" + idx; htmlString += `<li>${instruction[keyName]}</li>`; }); 
-                    return htmlString; })()}
-                    </ol>
+                <div class="sideBy">
+                    <img src="/images/servings.svg" alt="">
+                    <p>${recipe.itemServe}</p>
                 </div>
             </div>
-           </div>`);
+           </div>
+           <div class="btnHolder">
+        <a class="yourBtn" id="edit">Edit Recipe</a>
+        <div class="yourBtn" id="delete">Delete</div>
+        </div>`);
         })}
     }).fail((error) => {
         console.log("error ", error);

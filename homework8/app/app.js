@@ -31,9 +31,15 @@ export function addFormListener() {
 
         let imagePath = $("#imagePath").val();
         let itemName = $("#itemName").val();
+        let itemDesc = $("#itemDesc").val();
+        let itemTime = $("#itemTime").val();
+        let itemServe = $("#itemServe").val();
 
         newItemObj.imagePath = imagePath;
         newItemObj.itemName = itemName;
+        newItemObj.itemDesc = itemDesc;
+        newItemObj.itemTime = itemTime;
+        newItemObj.itemServe = itemServe;
         newItemObj.ingredients = [];
         newItemObj.instructions = [];
         console.log(newItemObj.imagePath);
