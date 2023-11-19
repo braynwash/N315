@@ -73,10 +73,16 @@ $(document).on("click", ".recipeCard a", function(e) {
 $(document).on("click", ".recipeImg a", function(e) {
     e.preventDefault();
     changePage("view");
-    console.log("Recipe link clicked!");
+    console.log("Custom view clicked!");
+});
+
+$(document).on("click", ".editBtn a", function(e) {
+    e.preventDefault();
+    changePage("edit");
+    console.log("Edit recipe clicked!");
 });
 
 $(document).ready(function () {
-    changePage("home");
+    changePage("pview");
     initListeners();
 })

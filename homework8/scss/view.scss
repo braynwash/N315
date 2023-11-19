@@ -3,6 +3,22 @@
   width: 1300px;
   display: block;
   margin: 0 auto;
+  .viewCard {
+    margin-top: 243px;
+    margin-bottom: 58px;
+    height: 421px;
+    width: 95%;
+    display: flex;
+    .viewImg {
+      background-color: green;
+      width: 50%;
+      margin-right: 45px;
+    }
+    .viewText {
+      width: 455px;
+      height: 100%;
+    }
+  }
   .ingredList {
     margin-bottom: 58px;
   }
@@ -17,34 +33,14 @@
     margin-bottom: 35px;
     margin-top: 35px;
   }
-  .recipeInput {
+  li {
     font-family: $Cav;
     font-size: 20px;
+    margin-bottom: 10px;
   }
-  .viewCard {
-    display: flex;
-    position: relative;
-    margin: 0 auto;
-    margin-top: 243px;
-    min-width: 100%;
-    min-height: 421px;
-    margin-bottom: 68px;
-    .recipeTitle {
-      transform: rotate(-90deg);
-      position: absolute;
-      top: 195px;
-      left: -110px;
-    }
-    .viewImg {
-      height: 100%;
-      width: 100%;
-      margin-right: 5%;
-      background-color: red;
-      z-index: 100;
-    }
-    .viewText {
-      min-width: 50%;
-    }
+  p {
+    font-family: $Cav;
+    font-size: 20px;
   }
   .editBtn {
     margin-top: 62px;

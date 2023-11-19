@@ -474,6 +474,22 @@ footer .footer .socials img:hover {
   display: block;
   margin: 0 auto;
 }
+.view .viewCard {
+  margin-top: 243px;
+  margin-bottom: 58px;
+  height: 421px;
+  width: 95%;
+  display: flex;
+}
+.view .viewCard .viewImg {
+  background-color: green;
+  width: 50%;
+  margin-right: 45px;
+}
+.view .viewCard .viewText {
+  width: 455px;
+  height: 100%;
+}
 .view .ingredList {
   margin-bottom: 58px;
 }
@@ -488,34 +504,14 @@ footer .footer .socials img:hover {
   margin-bottom: 35px;
   margin-top: 35px;
 }
-.view .recipeInput {
+.view li {
   font-family: "Caveat";
   font-size: 20px;
+  margin-bottom: 10px;
 }
-.view .viewCard {
-  display: flex;
-  position: relative;
-  margin: 0 auto;
-  margin-top: 243px;
-  min-width: 100%;
-  min-height: 421px;
-  margin-bottom: 68px;
-}
-.view .viewCard .recipeTitle {
-  transform: rotate(-90deg);
-  position: absolute;
-  top: 195px;
-  left: -110px;
-}
-.view .viewCard .viewImg {
-  height: 100%;
-  width: 100%;
-  margin-right: 5%;
-  background-color: red;
-  z-index: 100;
-}
-.view .viewCard .viewText {
-  min-width: 50%;
+.view p {
+  font-family: "Caveat";
+  font-size: 20px;
 }
 .view .editBtn {
   margin-top: 62px;
