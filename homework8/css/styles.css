@@ -2,6 +2,10 @@
   text-decoration: underline;
 }
 
+.hidden {
+  display: none;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -702,8 +706,9 @@ footer .footer .socials img:hover {
 }
 #modal {
   height: 80px;
+  z-index: 100;
   width: 100%;
-  position: sticky;
+  position: fixed;
   background-color: #fcbcb8;
   margin: 0 auto;
 }
@@ -716,6 +721,9 @@ footer .footer .socials img:hover {
   align-items: center;
   font-size: 25px;
   font-family: "Caveat Bold";
+}
+#modal .modalHolder .close {
+  cursor: pointer;
 }
 
 .userForm {

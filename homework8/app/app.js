@@ -76,7 +76,7 @@ $(document).on("click", ".recipeImg a", function(e) {
     console.log("Custom view clicked!");
 });
 
-$(document).on("click", "#edit a", function(e) {
+$(document).on("click", "#edit", function(e) {
     e.preventDefault();
     changePage("edit");
     console.log("Edit recipe clicked!");
@@ -90,7 +90,19 @@ $(document).on("click", "#delete", function(e) {
     console.log("Delete!");
 });
 
+$(document).on("click", "#submit", function(e) {
+    e.preventDefault();
+    $("#modal").toggle();
+    console.log("Delete!");
+});
+
+$(document).on("click", ".close", function(e) {
+    e.preventDefault();
+    $("#modal").toggle();
+    console.log("Delete!");
+});
+
 $(document).ready(function () {
-    changePage("home");
+    changePage("create");
     initListeners();
 })
