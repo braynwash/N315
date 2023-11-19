@@ -140,6 +140,9 @@ p {
   align-items: center;
   justify-content: flex-start;
 }
+.nav-holder .open .mobile-menu a {
+  margin-top: 15px;
+}
 .nav-holder .mobile-menu {
   background-color: white;
   display: none;
