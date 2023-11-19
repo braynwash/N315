@@ -8,12 +8,12 @@
       }
       .yourHolder {
         display: block;
-
         .yourBtn {
           background-color: $yellow;
           height: 42px;
           width: 127px;
           border-radius: 26px;
+          cursor: pointer;
           font-size: 20px;
           font-family: $Cav;
           display: flex;

@@ -10,9 +10,12 @@
     width: 95%;
     display: flex;
     .viewImg {
-      background-color: green;
       width: 50%;
       margin-right: 45px;
+      img {
+        height: 100%;
+        width: 100%;
+      }
     }
     .viewText {
       width: 455px;

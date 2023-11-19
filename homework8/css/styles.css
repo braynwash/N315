@@ -482,9 +482,12 @@ footer .footer .socials img:hover {
   display: flex;
 }
 .view .viewCard .viewImg {
-  background-color: green;
   width: 50%;
   margin-right: 45px;
+}
+.view .viewCard .viewImg img {
+  height: 100%;
+  width: 100%;
 }
 .view .viewCard .viewText {
   width: 455px;
@@ -697,6 +700,24 @@ footer .footer .socials img:hover {
     top: 1175px;
   }
 }
+#modal {
+  height: 80px;
+  width: 100%;
+  position: sticky;
+  background-color: #fcbcb8;
+  margin: 0 auto;
+}
+#modal .modalHolder {
+  margin: 0 auto;
+  height: 100%;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 25px;
+  font-family: "Caveat Bold";
+}
+
 .userForm {
   max-width: 980px;
   margin: 0 auto;
@@ -704,6 +725,7 @@ footer .footer .socials img:hover {
   padding-top: 52px;
   display: block;
   text-align: left;
+  position: relative;
 }
 .userForm h1 {
   margin-left: 2%;
@@ -860,6 +882,7 @@ footer .footer .socials img:hover {
   height: 42px;
   width: 127px;
   border-radius: 26px;
+  cursor: pointer;
   font-size: 20px;
   font-family: "Caveat";
   display: flex;

@@ -1,3 +1,21 @@
+#modal {
+  height: 80px;
+  width: 100%;
+  position: sticky;
+  background-color: $lightpink;
+  margin: 0 auto;
+  .modalHolder {
+    margin: 0 auto;
+    height: 100%;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 25px;
+    font-family: $CavB;
+  }
+}
+
 .userForm {
   max-width: 980px;
   margin: 0 auto;
@@ -5,6 +23,7 @@
   padding-top: 52px;
   display: block;
   text-align: left;
+  position: relative;
   h1 {
     margin-left: 2%;
     margin-top: 195px;

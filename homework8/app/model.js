@@ -42,6 +42,37 @@ export function changePage(pageName) {
         <a class="yourBtn" id="edit">Edit Recipe</a>
         <div class="yourBtn" id="delete">Delete</div>
         </div>`);
+        });
+        $.each(recipes, (idx, recipe) => {
+            $(".viewHolder").append(`
+            <div class="viewCard">
+                <div class="viewImg">
+                <img src="${recipe.imagePath}">
+                </div>
+                <div class="viewText">
+                 <h1>Description</h1>
+                 <p>${recipe.itemDesc}</p>
+                 <h2>Total time:</h2>
+                 <p>${recipe.itemTime}</p>
+                 <h2>Servings</h2>
+                 <p>${recipe.itemServe}</p>
+                </div>
+        </div>
+        <h1>Ingredients:</h1>
+        <div class="ingredList">
+        <ul>
+        ${(() => { let htmlString = ""; $.each(recipe.ingredients, (idx, ingredient) => { let keyName = "ingredient" + idx; htmlString += `<li>${ingredient[keyName]}</li>`; }); 
+        return htmlString; })()}
+        </ul>
+    </div>
+    <h1>Instructions:</h1>
+    <div class="instructList">
+    <ol>
+    ${(() => { let htmlString = ""; $.each(recipe.ingredients, (idx, ingredient) => { let keyName = "ingredient" + idx; htmlString += `<li>${ingredient[keyName]}</li>`; }); 
+    return htmlString; })()}
+    </ol>
+    </div>
+    <div class="editBtn"><a id="edit" href="#">Edit Recipe</a></div>`);
         })}
     }).fail((error) => {
         console.log("error ", error);
