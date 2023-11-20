@@ -485,6 +485,14 @@ footer .footer .socials img:hover {
   width: 95%;
   display: flex;
 }
+.view .viewCard .title {
+  font-size: 25px;
+  font-family: "Lato Black";
+  position: absolute;
+  transform: rotate(-90deg);
+  left: 85px;
+  bottom: 230px;
+}
 .view .viewCard .viewImg {
   width: 50%;
   margin-right: 45px;

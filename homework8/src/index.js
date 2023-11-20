@@ -62,6 +62,7 @@ function changePage(pageName) {
         $.each(recipes, (idx, recipe) => {
             $(".viewHolder").append(`
             <div class="viewCard">
+                <h1 class="title">${recipe.itemName}</h1>
                 <div class="viewImg">
                 <img src="${recipe.imagePath}">
                 </div>
