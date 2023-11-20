@@ -1,4 +1,5 @@
 import { initializeApp } from "firebase/app";
+import { getAuth, signOut, createUserWithEmailAndPassword, signInWithEmailAndPassword} from "firebase/auth";
 
 const firebaseConfig = {
   apiKey: "AIzaSyBuqab9hMhqjT-i-G7rL3Q1sd4N-k1Ks7M",
@@ -10,8 +11,9 @@ const firebaseConfig = {
 };
 
 const app = initializeApp(firebaseConfig);
+const auth = getAuth(app);
 
-alert("Hello!");
+console.log("Webpack is working!");
 
 
 var mobileBtn = document.getElementById("hamburger");
@@ -191,16 +193,92 @@ $(document).on("click", "#delete", function(e) {
 $(document).on("click", "#submit", function(e) {
     e.preventDefault();
     $("#modal").toggle();
-    console.log("Delete!");
+    console.log("Toggle!");
+});
+
+$(document).on("click", "#signInBtn", function(e) {
+    e.preventDefault();
+    $("#modalLog").toggle();
+    console.log("Toggle!");
+});
+
+$(document).on("click", "#createAccBtn", function(e) {
+    e.preventDefault();
+    $("#modalLog").toggle();
+    console.log("Toggle!");
 });
 
 $(document).on("click", ".close", function(e) {
     e.preventDefault();
     $("#modal").toggle();
-    console.log("Delete!");
+    console.log("Close!");
+});
+
+$(document).on("click", "#modalLog .close", function(e) {
+    e.preventDefault();
+    $("#modalLog").toggle();
+    console.log("Close!");
+});
+
+$(document).on("click", ".modalHolder a", function(e) {
+    e.preventDefault();
+    changePage("custom");
+});
+
+$(document).on("click", "#createAccBtn", function(e) {
+        e.preventDefault();
+        let fName = $("#fname").val();
+        let lName = $("#lname").val();
+        let email = $("#Cemail").val();
+        let pw = $("#Cpw").val();
+        console.log(fName);
+        console.log(lName);
+        document.getElementById("login").innerHTML="Log out";
+        $("#custom").show();
+        // $(".browseHolder").append(`<h1>Hey ${fName}, here are your recipes!</h1>`);
+        // $(".userForm").append(`<h1>Hey ${fName}, create your recipe!</h1>`)
+    createUserWithEmailAndPassword(auth, email, pw)
+    .then((userCredential) => {
+    // Signed up 
+    const user = userCredential.user;
+    console.log(user);
+    // ...
+    })
+    .catch((error) => {
+    const errorCode = error.code;
+    const errorMessage = error.message;
+    alert("Error: " + errorMessage);
+    // ..
+    });
+    });
+
+$(document).on("click", "#signInBtn", function(e) {
+        let email = $("#email").val();
+        let pw = $("#pw").val();
+        console.log("sign in");
+        document.getElementById("login").innerHTML="Log out";
+        $("#custom").show();
+        // $(".browseHolder").append(`<h1>Hey ${fName}, here are your recipes!</h1>`);
+        signInWithEmailAndPassword(auth, email, pw)
+    .then((userCredential) => {
+    // Signed up 
+    const user = userCredential.user;
+    console.log(user);
+    
+    // ...
+    })
+    .catch((error) => {
+    const errorCode = error.code;
+    const errorMessage = error.message;
+    alert("Error Message " + errorMessage);
+    // ..
+    });
 });
 
 $(document).ready(function () {
-    changePage("home");
+    changePage("login");
     initListeners();
 })
+
+
+

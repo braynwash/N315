@@ -726,6 +726,29 @@ footer .footer .socials img:hover {
   cursor: pointer;
 }
 
+#modalLog {
+  height: 80px;
+  width: 100%;
+  background-color: white;
+  position: fixed;
+  margin: 0 auto;
+}
+
+#modalLog .modalHolder {
+  margin: 0 auto;
+  height: 100%;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 25px;
+  font-family: "Caveat Bold";
+}
+
+#modalLog .modalHolder .close {
+  cursor: pointer;
+}
+
 .userForm {
   max-width: 980px;
   margin: 0 auto;
