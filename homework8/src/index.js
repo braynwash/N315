@@ -276,7 +276,7 @@ $(document).on("click", "#signInBtn", function(e) {
 });
 
 $(document).ready(function () {
-    changePage("login");
+    changePage("home");
     initListeners();
 })
 
