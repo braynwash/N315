@@ -24,6 +24,17 @@ p {
   margin-bottom: 16px;
 }
 
+.siteWrapper {
+  width: 70%;
+  min-height: 300px;
+  margin: 0 auto;
+  margin-top: 25px;
+}
+.siteWrapper img {
+  width: 100%;
+  object-fit: contain;
+}
+
 nav {
   background-color: #ece9e4;
   height: 160px;
@@ -127,6 +138,128 @@ nav .bottomNav a:hover {
 }
 .dealBanner .dealText span {
   font-size: 10px;
+}
+
+footer {
+  margin-top: 30px;
+}
+footer p {
+  text-align: center;
+}
+footer .footInfo {
+  height: 50px;
+  background-color: #473036;
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  color: white;
+  margin-bottom: 10px;
+}
+footer .footInfo h6 {
+  font-size: 12px;
+}
+footer .footInfo .store {
+  display: flex;
+}
+footer .footInfo .store i {
+  margin-left: 25px;
+  margin-right: 15px;
+  cursor: pointer;
+}
+footer .footInfo .socials {
+  display: flex;
+  width: 25%;
+}
+footer .footInfo .socials .socialIcons {
+  width: 30%;
+  margin-left: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+footer .footInfo .socials .socialIcons i {
+  cursor: pointer;
+}
+footer .extInfo {
+  width: 97%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+  color: #473036;
+  margin-bottom: 25px;
+}
+footer .extInfo .footLinks {
+  width: 350px;
+}
+footer .extInfo .footLinks h3 {
+  margin-bottom: 15px;
+}
+footer .extInfo .footLinks p {
+  text-align: left;
+  margin-bottom: 8px;
+}
+footer .extInfo .footLinks p:hover {
+  text-decoration: underline;
+  color: #947880;
+  cursor: pointer;
+}
+footer .extInfo .mailList {
+  width: 375px;
+}
+footer .extInfo .mailList .emailBox {
+  display: flex;
+  margin-top: 30px;
+  margin-bottom: 35px;
+}
+footer .extInfo .mailList .emailBox input {
+  width: 70%;
+  height: 35px;
+  border: 2px solid rgb(199, 199, 199);
+  border-radius: 5px;
+  padding-left: 5px;
+}
+footer .extInfo .mailList .emailBox #country {
+  width: 30%;
+  background-color: white;
+  border: 2px solid #f9c507;
+  border-radius: 0px;
+  padding-left: 0px;
+}
+footer .extInfo .mailList .emailBox #country:hover {
+  background-color: #f9c507;
+  cursor: pointer;
+}
+footer .extInfo .mailList .countryBox {
+  width: 175px;
+  display: flex;
+  margin-top: 25px;
+  justify-content: space-around;
+}
+footer .extInfo .mailList .countryBox img {
+  height: 20px;
+  width: 20px;
+  border: grey;
+}
+footer .extInfo .mailList .countryBox i {
+  cursor: pointer;
+}
+footer hr {
+  margin-bottom: 15px;
+}
+footer .footTrademark {
+  height: 150px;
+  color: #473036;
+  font-size: 12px;
+}
+footer .footTrademark #firstP {
+  margin-bottom: 50px;
+}
+footer .footTrademark span {
+  cursor: pointer;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+footer .footTrademark span:first-child {
+  margin-left: 15px;
 }
 
 /*# sourceMappingURL=styles.css.map */

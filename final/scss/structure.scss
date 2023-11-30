@@ -23,3 +23,14 @@ h6,
 p {
   margin-bottom: 16px;
 }
+
+.siteWrapper {
+  width: 70%;
+  min-height: 300px;
+  margin: 0 auto;
+  margin-top: 25px;
+  img {
+    width: 100%;
+    object-fit: contain;
+  }
+}
