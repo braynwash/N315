@@ -1,8 +1,15 @@
+@font-face {
+  font-family: "MarkOT";
+  src: url(../css/fonts/MarkOT-Book.otf);
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "MarkOT";
 }
+
 html,
 body {
   height: 100%;
