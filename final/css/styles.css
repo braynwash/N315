@@ -390,7 +390,7 @@ nav .bottomNav a:hover {
 
 .accountWrap {
   position: fixed;
-  display: flex;
+  display: none;
   justify-content: flex-end;
   top: 100px;
   background-color: rgba(137, 137, 137, 0.578);

@@ -100,7 +100,13 @@ $(document).on("click", ".removeCart", function (e) {
 
 $(document).on("click", "#close", function (e) {
   $(".modalBox").css("display", "none");
+  $(".accountWrap").css("display", "none");
   console.log("Close!");
+});
+
+$(document).on("click", "#account", function (e) {
+  $(".accountWrap").css("display", "flex");
+  console.log("Hi!");
 });
 
 function updateCartCount() {
