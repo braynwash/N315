@@ -96,8 +96,23 @@ nav .topNav .icons .account i {
   cursor: pointer;
 }
 nav .topNav .icons .cart {
+  position: relative;
   display: flex;
   flex-direction: column;
+}
+nav .topNav .icons .cart .cartCounter {
+  position: absolute;
+  background-color: #333333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25px;
+  height: 25px;
+  font-size: 16px;
+  border-radius: 50px;
+  color: white;
+  top: -7px;
+  right: -10px;
 }
 nav .bottomNav .navLinks {
   width: 85%;
@@ -251,6 +266,76 @@ nav .bottomNav a:hover {
   cursor: pointer;
 }
 .home .product .prodDetails .buyNow:hover {
+  border-color: #3d5a7b;
+}
+
+.cartPage {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.cartPage p {
+  margin-top: 15px;
+}
+.cartPage h1 {
+  letter-spacing: 9px;
+  margin-bottom: 50px;
+}
+.cartPage .product {
+  background-color: white;
+  max-width: 260px;
+  margin-top: 50px;
+  margin-bottom: 25px;
+  box-shadow: 0 4px 8px 0 rgba(158, 158, 158, 0.2), 0 6px 20px 0 rgba(158, 158, 158, 0.2);
+}
+.cartPage .product:hover {
+  border: 2px solid #3d5a7b;
+}
+.cartPage .product .productImg {
+  background-color: white;
+  width: 250px;
+  height: 275px;
+}
+.cartPage .product .productImg img {
+  width: 250px;
+  height: 275px;
+  object-fit: contain;
+}
+.cartPage .product .prodDetails {
+  color: rgb(54, 54, 54);
+  margin-left: 10px;
+  text-align: left;
+}
+.cartPage .product .prodDetails h3 {
+  font-size: 22px;
+  color: #e62c2c;
+}
+.cartPage .product .prodDetails .shipping {
+  margin-top: 0px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+.cartPage .product .prodDetails .shipping i {
+  font-size: 18px;
+  margin-right: 5px;
+}
+.cartPage .product .prodDetails .removeCart {
+  width: 90%;
+  height: 40px;
+  border: 2px solid rgb(241, 190, 72);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 16px;
+  margin-left: 7px;
+  margin-top: 15px;
+  margin-bottom: 25px;
+  cursor: pointer;
+}
+.cartPage .product .prodDetails .removeCart:hover {
   border-color: #3d5a7b;
 }
 

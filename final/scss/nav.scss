@@ -56,6 +56,21 @@ nav {
         text-align: center;
       }
       .cart {
+        position: relative;
+        .cartCounter {
+          position: absolute;
+          background-color: #333333;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 25px;
+          height: 25px;
+          font-size: 16px;
+          border-radius: 50px;
+          color: white;
+          top: -7px;
+          right: -10px;
+        }
         display: flex;
         flex-direction: column;
       }
