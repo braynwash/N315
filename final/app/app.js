@@ -29,7 +29,6 @@ function getData() {
 
 function loadProducts() {
   $.get(`data/data.json`, (data) => {
-    console.log(data.Products);
     $.each(prodInfo.Products, (idx, coffee) => [
       $(".home").append(`<div class="product">
       <div class="productImg">
@@ -53,9 +52,9 @@ function loadProducts() {
         let obj = {
           itemIdx: productIdx,
         };
-        prodInfo.Cart.push(obj);
-        cartCount = prodInfo.Cart.length;
-        updateCartCount();
+        // prodInfo.Cart.push(obj);
+        // cartCount = prodInfo.Cart.length;
+        // updateCartCount();
       });
     });
 }

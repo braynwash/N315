@@ -1,3 +1,52 @@
+.dropDowns {
+  margin-top: 15px;
+  margin-bottom: 35px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .boxes {
+    display: flex;
+    justify-content: space-between;
+    width: 72%;
+    .dropBox {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 2px solid #898989;
+      border-radius: 5px;
+      height: 50px;
+      padding-left: 10px;
+      padding-right: 10px;
+      min-width: 100px;
+      cursor: pointer;
+      &:hover {
+        border-color: black;
+      }
+      i {
+        margin-left: 15px;
+        font-size: 20px;
+      }
+    }
+  }
+  .popularity {
+    display: flex;
+    align-items: center;
+    width: 200px;
+    p {
+      margin-bottom: 5px;
+      font-size: 12px;
+    }
+    #pop {
+      font-size: 14px;
+    }
+    i {
+      margin-left: 15px;
+      font-size: 20px;
+    }
+  }
+}
+
 .home {
   display: flex;
   flex-wrap: wrap;
