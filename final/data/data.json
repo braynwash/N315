@@ -1,53 +1,53 @@
 {
     "Products":[
        {  
-          "productImage":"prod1",
+          "productImage":"prod1.jpg",
           "productName":"Keurig K-Elite Single Serve Coffee Maker",
           "productPrice":"118.99"
        },
        {
-         "productImage":"prod2",
+         "productImage":"prod2.jpg",
          "productName":"Keurig K-Select Coffee Maker",
          "productPrice":"69.99"
      },
      {
-      "productImage":"prod3",
+      "productImage":"prod3.jpg",
       "productName":"K-Mini Single Serve Coffee Maker",
       "productPrice":"71.99"
      },
      {
-      "productImage":"prod4",
+      "productImage":"prod4.jpg",
       "productName":"K-Cafe SMART Single Serve Coffee Maker",
       "productPrice":"124.99"
      },
      {
-      "productImage":"prod5",
+      "productImage":"prod5.jpg",
       "productName":"K-Slim Single Serve Cofee Maker",
       "productPrice":"79.99"
      },
      {
-      "productImage":"prod6",
+      "productImage":"prod6.jpg",
       "productName":"K-Duo Single Serve & Carafe Coffee Maker",
       "productPrice":"119.99"
      },
      {
-      "productImage":"prod7",
+      "productImage":"prod7.jpg",
       "productName":"K-Duo Plus Single Serve & Carafe Coffee Maker",
       "productPrice":"183.99"
      },
      {
-      "productImage":"prod8",
+      "productImage":"prod8.jpg",
       "productName":"K-Iced Single Serve Coffee Maker",
       "productPrice":"59.99"
      },
      {
-      "productImage":"prod9",
+      "productImage":"prod9.jpg",
       "productName":"K-Duo Special Edition Single Serve & Carafe Coffee Maker",
       "productPrice":"199.99"
      },
      {
-      "productImage":"prod10",
-      "productName":"Keurig K-Cafe Barista Bar Single Serve Coffee Maker and...",
+      "productImage":"prod10.jpg",
+      "productName":"Keurig K-Cafe Barista Bar Single Serve Coffee Maker",
       "productPrice":"99.99"
      }
     ],
