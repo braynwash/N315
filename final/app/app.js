@@ -37,7 +37,7 @@ function loadCart() {
     <h4>${coffee.productName}</h4>
     <h3>$${coffee.productPrice}</h3>
     <div class="shipping"><i class="fa-solid fa-truck-moving fa-flip-horizontal" style="color: rgb(126, 126, 126);"></i>Free Shipping</div>
-    <div id=${idx} class="removeCart">Delete</div>
+    <div id=${idx} class="removeCart">Remove from Cart</div>
     </div>
 </div>`);
     });
