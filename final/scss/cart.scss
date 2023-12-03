@@ -7,7 +7,7 @@
   }
   h1 {
     letter-spacing: 9px;
-    margin-bottom: 50px;
+    margin-bottom: 150px;
   }
   .product {
     background-color: white;
@@ -63,6 +63,30 @@
         &:hover {
           border-color: #3d5a7b;
         }
+      }
+    }
+  }
+}
+
+.modalBox {
+  display: none;
+  justify-content: center;
+  .modalRemove {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+    height: 50px;
+    bottom: 25px;
+    padding: 20px 10px;
+    font-size: 18px;
+    color: white;
+    background-color: #3d5a7b;
+    #close {
+      font-size: 20px;
+      &:hover {
+        cursor: pointer;
       }
     }
   }

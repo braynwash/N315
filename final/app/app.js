@@ -73,6 +73,10 @@ function loadProducts() {
     .done(function () {
       $(".buyNow").on("click", (e) => {
         // console.log("Click!");
+        let cartUser = cartCount + 1;
+        document.getElementById(
+          "itemAdd"
+        ).innerHTML = `Item successfully added to cart. You have ${cartUser} item(s) in your cart.`;
         let productIdx = e.currentTarget.id;
         let obj = {
           itemIdx: productIdx,
@@ -85,6 +89,11 @@ function loadProducts() {
 }
 
 $(document).on("click", ".buyNow", function (e) {
+  $(".modalBox").css("display", "flex");
+  // console.log("Toggle!");
+});
+
+$(document).on("click", ".removeCart", function (e) {
   $(".modalBox").css("display", "flex");
   // console.log("Toggle!");
 });
