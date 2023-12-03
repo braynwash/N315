@@ -56,6 +56,7 @@ nav .topNav .search i {
   position: absolute;
   top: 5px;
   left: 20px;
+  cursor: pointer;
 }
 nav .topNav .search input {
   width: 100%;
@@ -83,6 +84,7 @@ nav .topNav .icons .support {
 }
 nav .topNav .icons .support i {
   font-size: 30px;
+  cursor: pointer;
 }
 nav .topNav .icons .account {
   display: flex;
@@ -91,6 +93,7 @@ nav .topNav .icons .account {
 }
 nav .topNav .icons .account i {
   font-size: 35px;
+  cursor: pointer;
 }
 nav .topNav .icons .cart {
   display: flex;

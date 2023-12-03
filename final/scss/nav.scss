@@ -16,6 +16,7 @@ nav {
         position: absolute;
         top: 5px;
         left: 20px;
+        cursor: pointer;
       }
       input {
         width: 100%;
@@ -39,6 +40,7 @@ nav {
       .support {
         i {
           font-size: 30px;
+          cursor: pointer;
         }
         display: flex;
         flex-direction: column;
@@ -47,6 +49,7 @@ nav {
       .account {
         i {
           font-size: 35px;
+          cursor: pointer;
         }
         display: flex;
         flex-direction: column;
