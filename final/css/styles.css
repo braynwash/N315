@@ -269,6 +269,30 @@ nav .bottomNav a:hover {
   border-color: #3d5a7b;
 }
 
+.modalBox {
+  display: none;
+  justify-content: center;
+}
+.modalBox .modalAdd {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 50%;
+  height: 50px;
+  bottom: 25px;
+  padding: 20px 10px;
+  font-size: 18px;
+  color: white;
+  background-color: #3d5a7b;
+}
+.modalBox .modalAdd #close {
+  font-size: 20px;
+}
+.modalBox .modalAdd #close:hover {
+  cursor: pointer;
+}
+
 .cartPage {
   display: flex;
   flex-wrap: wrap;

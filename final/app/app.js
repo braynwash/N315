@@ -72,7 +72,7 @@ function loadProducts() {
     })
     .done(function () {
       $(".buyNow").on("click", (e) => {
-        console.log("Click!");
+        // console.log("Click!");
         let productIdx = e.currentTarget.id;
         let obj = {
           itemIdx: productIdx,
@@ -83,6 +83,16 @@ function loadProducts() {
       });
     });
 }
+
+$(document).on("click", ".buyNow", function (e) {
+  $(".modalBox").css("display", "flex");
+  // console.log("Toggle!");
+});
+
+$(document).on("click", "#close", function (e) {
+  $(".modalBox").css("display", "none");
+  console.log("Close!");
+});
 
 function updateCartCount() {
   if (cartCount == 0) {
