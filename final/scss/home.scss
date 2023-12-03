@@ -1,0 +1,61 @@
+.home {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  .product {
+    background-color: white;
+    max-width: 260px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 8px 0 #9e9e9e33, 0 6px 20px 0 #9e9e9e33;
+    &:hover {
+      border: 2px solid #3d5a7b;
+    }
+    .productImg {
+      background-color: white;
+      width: 250px;
+      height: 275px;
+      img {
+        width: 250px;
+        height: 275px;
+        object-fit: contain;
+      }
+    }
+    .prodDetails {
+      color: rgb(54, 54, 54);
+      margin-left: 10px;
+      text-align: left;
+      h3 {
+        font-size: 22px;
+        color: #e62c2c;
+      }
+      .shipping {
+        margin-top: 0px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        font-weight: bold;
+        i {
+          font-size: 18px;
+          margin-right: 5px;
+        }
+      }
+      .buyNow {
+        width: 90%;
+        height: 40px;
+        border: 2px solid rgb(241, 190, 72);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        font-size: 16px;
+        margin-left: 7px;
+        margin-top: 15px;
+        margin-bottom: 25px;
+        cursor: pointer;
+        &:hover {
+          border-color: #3d5a7b;
+        }
+      }
+    }
+  }
+}
