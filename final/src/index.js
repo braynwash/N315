@@ -1,3 +1,23 @@
+import { initializeApp } from "firebase/app";
+import {
+  getAuth,
+  signOut,
+  createUserWithEmailAndPassword,
+  signInWithEmailAndPassword,
+} from "firebase/auth";
+
+const firebaseConfig = {
+  apiKey: "AIzaSyD_mKANnLJV73Y8nVc0E349ouFoqP0yVoc",
+  authDomain: "final-36477.firebaseapp.com",
+  projectId: "final-36477",
+  storageBucket: "final-36477.appspot.com",
+  messagingSenderId: "443036880037",
+  appId: "1:443036880037:web:fa1eba0ef4dabe2471114c",
+};
+
+const app = initializeApp(firebaseConfig);
+const auth = getAuth(app);
+
 var cartCount = 0;
 var prodInfo = {};
 
@@ -31,7 +51,7 @@ function loadCart() {
       let coffee = prodInfo.Products[cartItem.itemIdx];
       $(".cartPage").append(`<div class="product">
     <div class="productImg">
-    <img src="/images/${coffee.productImage}"></img>
+    <img src="images/${coffee.productImage}"></img>
     </div>
     <div class="prodDetails">
     <h4>${coffee.productName}</h4>
@@ -56,7 +76,7 @@ function loadProducts() {
     $.each(prodInfo.Products, (idx, coffee) => [
       $(".home").append(`<div class="product">
       <div class="productImg">
-      <img src="/images/${coffee.productImage}"></img>
+      <img src="images/${coffee.productImage}"></img>
       </div>
       <div class="prodDetails">
       <h4>${coffee.productName}</h4>
@@ -125,6 +145,67 @@ function getData() {
     console.log("ERROR! ", error);
   });
 }
+
+$(document).on("click", "#createAcc", function (e) {
+  e.preventDefault();
+  let fName = $("#fName").val();
+  let lName = $("#lName").val();
+  let email = $("#Cemail").val();
+  let pw = $("#Cpw").val();
+  console.log(fName);
+  console.log(lName);
+  document.getElementById("accText").innerText = fName;
+  document.getElementById("login").innerText = "LOG OUT";
+  $("#login").addClass("logout");
+  $(".cInputs").css("display", "none");
+  createUserWithEmailAndPassword(auth, email, pw)
+    .then((userCredential) => {
+      // Signed up
+      const user = userCredential.user;
+      console.log(user);
+      // ...
+    })
+    .catch((error) => {
+      const errorCode = error.code;
+      const errorMessage = error.message;
+      alert("Error: " + errorMessage);
+      // ..
+    });
+});
+
+$(document).on("click", "#login", function (e) {
+  let email = $("#email").val();
+  let pw = $("#pw").val();
+  console.log("Signed in");
+  document.getElementById("login").innerText = "LOG OUT";
+  $("#login").addClass("logout");
+  $(".cInputs").css("display", "none");
+  signInWithEmailAndPassword(auth, email, pw)
+    .then((userCredential) => {
+      // Signed up
+      const user = userCredential.user;
+      console.log(user);
+      // ...
+    })
+    .catch((error) => {
+      const errorCode = error.code;
+      const errorMessage = error.message;
+      alert("Error Message " + errorMessage);
+      // ..
+    });
+});
+
+$(document).on("click", ".logout", function () {
+  signOut(auth)
+    .then(() => {
+      console.log("Signed out");
+      $(".cInputs").css("display", "block");
+      document.getElementById("accText").innerText = "Account";
+    })
+    .catch((error) => {
+      console.error("Error signing out:", error);
+    });
+});
 
 function initURLListener() {
   $(window).on("hashchange", changeRoute);
