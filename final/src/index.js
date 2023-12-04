@@ -93,6 +93,7 @@ function loadProducts() {
     .done(function () {
       $(".buyNow").on("click", (e) => {
         // console.log("Click!");
+        $("#itemAdded").css("display", "flex");
         let cartUser = cartCount + 1;
         document.getElementById(
           "itemAdd"
