@@ -109,12 +109,12 @@ function loadProducts() {
 }
 
 $(document).on("click", ".buyNow", function (e) {
-  $(".modalBox").css("display", "flex");
+  $("#itemAdded").css("display", "flex");
   // console.log("Toggle!");
 });
 
 $(document).on("click", ".removeCart", function (e) {
-  $(".modalBox").css("display", "flex");
+  $("#itemRmv").css("display", "flex");
   // console.log("Toggle!");
 });
 
