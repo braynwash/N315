@@ -1,4 +1,4 @@
-# Homework Eight
+# Final Project
 
 This is my final project for 315 Adv. Web Development at IUPUI.
 
@@ -20,3 +20,4 @@ In this project, I have...
 - submited the project with the link to the Github repo.
 
 # Web4 Link
+https://in-info-web4.informatics.iupui.edu/~jereblac/315-final/dist/
