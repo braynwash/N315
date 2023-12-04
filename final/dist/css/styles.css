@@ -275,6 +275,7 @@ nav .bottomNav a:hover {
   justify-content: center;
 }
 .modalBox .modalAdd {
+  z-index: 100;
   position: fixed;
   display: flex;
   align-items: center;
