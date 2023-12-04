@@ -120,7 +120,18 @@ $(document).on("click", ".removeCart", function (e) {
 
 $(document).on("click", "#close", function (e) {
   $(".modalBox").css("display", "none");
+  console.log("Close!");
+});
+
+$(document).on("click", "#accClose", function (e) {
   $(".accountWrap").css("display", "none");
+  console.log("Close!");
+});
+
+$(document).on("click", "#userClose", function (e) {
+  $("#userLog").css("display", "none");
+  $("#userOut").css("display", "none");
+  $("#userCreate").css("display", "none");
   console.log("Close!");
 });
 
@@ -158,6 +169,9 @@ $(document).on("click", "#createAcc", function (e) {
   document.getElementById("login").innerText = "LOG OUT";
   $("#login").addClass("logout");
   $(".cInputs").css("display", "none");
+  $("#userCreate").css("display", "flex");
+  document.getElementById("whenUser").innerText =
+    "You have successfully created an account!";
   createUserWithEmailAndPassword(auth, email, pw)
     .then((userCredential) => {
       // Signed up
@@ -180,6 +194,7 @@ $(document).on("click", "#login", function (e) {
   document.getElementById("login").innerText = "LOG OUT";
   $("#login").addClass("logout");
   $(".cInputs").css("display", "none");
+  $("#userLog").css("display", "flex");
   signInWithEmailAndPassword(auth, email, pw)
     .then((userCredential) => {
       // Signed up
@@ -200,6 +215,9 @@ $(document).on("click", ".logout", function () {
     .then(() => {
       console.log("Signed out");
       $(".cInputs").css("display", "block");
+      $("#userOut").css("display", "flex");
+      document.getElementById("login").innerText = "SIGN IN";
+      $("#login").removeClass("logout");
       document.getElementById("accText").innerText = "Account";
     })
     .catch((error) => {

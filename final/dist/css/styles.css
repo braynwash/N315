@@ -407,13 +407,16 @@ nav .bottomNav a:hover {
   box-shadow: 0 2px 8px 0 white;
   padding: 20px 25px;
 }
-.accountWrap .accountCard #close {
+.accountWrap .accountCard #accClose {
   cursor: pointer;
   font-size: 18px;
   margin-bottom: 20px;
 }
-.accountWrap .accountCard #close i {
+.accountWrap .accountCard #accClose i {
   margin-right: 10px;
+}
+#userClose {
+  cursor: pointer;
 }
 .accountWrap .accountCard .heading {
   height: 40px;
